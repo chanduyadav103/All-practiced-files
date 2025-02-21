@@ -1,0 +1,37 @@
+body{
+    background-color:greenyellow;
+}
+.squares{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient( green, white);
+    border: 30px 40px 50px 60px solid black;
+    text-align: center;
+
+}
+.squares h1{
+    padding-top: 70px;
+}
+.rectangle{
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(blue,black,red);
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.rectangle p{
+    padding-top: 70px;
+}
+.chandu{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(purple,black);
+    margin: 2px 3px 5px 10px black;
+}
+.yadav img{
+    border-radius: 170px;
+
+
+}
