@@ -1,37 +1,47 @@
-.circle{
-    width: 200px;
-    height:200px;
-    border-radius: 50%;
-    background-color: black;
-    background-image: url(https://tse3.mm.bing.net/th?id=OIP.4sAdxveaU3Y9zdKOBHuL-gHaEK&pid=Api&P=0&h=180);
-    background-size: cover;
-    background-position: center;
-    margin-top: 40px;
-    margin-left: 670px;
-    
+html,
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1c1c1c, rgb(84, 12, 84));
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+.circle-section {
+  padding-top: 40px;
+  margin-left: 670px;
+  text-align: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  background-image: url(https://tse3.mm.bing.net/th?id=OIP.4sAdxveaU3Y9zdKOBHuL-gHaEK&pid=Api&P=0&h=180);
+  background-size: cover;
+  background-position: center;
+}
+
 .bebas-neue-regular {
-    font-family: "Bebas Neue", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-h1{
-color: rgb(202, 15, 202);
-margin-left: 648px;
-font-size: 31px;
-font-weight: bolder;
-}
-p{
-    font-size: 22px;
-    color:rgb(133, 10, 133);
-
-}
-h2{
-    color: white;
-    font-weight: bold;
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-body{
-    background: linear-gradient(135deg, #0A0A0A, #1C1C1C, rgb(84, 12, 84));
+h1 {
+  color: rgb(202, 15, 202);
+  margin-left: 648px;
+  font-size: 31px;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 22px;
+  color: rgb(133, 10, 133);
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
 }
