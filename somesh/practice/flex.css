@@ -1,0 +1,89 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    padding: 32px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.box {
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 20px;  
+}
+
+.violet {
+    background-color: violet;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}
+.crimson{
+    background-color: crimson;
+}
+.maroon{
+    background-color: maroon;
+}
+.orange{
+    background-color: orangered;
+}
+.olive{
+    background-color: olive;
+
+}
+.green{
+    background-color: green;
+}
+.lime{
+    background-color: lime;
+
+}
+.purple{
+    background-color: purple;
+}
+.teal{
+    background-color: teal;
+
+}
+.aqua{
+    background-color: aqua;
+}
+.navy{
+    background-color: navy;
+}
+.silver{
+    background-color: silver;
+
+}
+.pink{
+    background-color: palevioletred;
+
+}
+.gold{
+    background-color: gold;
+}
+.lavender{
+    background-color: lavender;
+}
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:large;
+    color: beige; 
+    text-align: center;
+    
+}

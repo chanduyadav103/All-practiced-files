@@ -1,0 +1,127 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.container1{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    .block1{
+        width: 50%;
+        background-color: black;
+        border-radius: 20px;
+    }
+    .block2{
+        width: 50%;
+        background-color: brown;
+        border-radius: 20px;
+    }
+}
+.col{
+    width: 11%;
+    height: 150px;
+    border-radius: 20px;
+}
+.container2{
+    display: flex;
+
+.block3{
+    background-color: aquamarine;
+}
+.block4{
+    background-color:blanchedalmond
+}
+.block5{
+    background-color:blueviolet
+}
+.block6{
+    background-color:cornflowerblue
+}
+.block7{
+    background-color:pink
+}
+.block8{
+    background-color: red
+}
+.block9{
+    background-color:peru
+}
+.block10{
+    background-color: orangered
+}
+.block11{
+    background-color: gold
+}
+
+}
+.box{
+    width: 25%;
+    height: 111px;
+    border-radius: 20px;
+}
+.container3{
+    display: flex;
+    border-radius: 20px;
+
+    .block12{
+        background-color: rgb(10, 10, 78);
+    }
+    .block13{
+        background-color: palevioletred;
+    }
+    .block14{
+        background-color: peachpuff;
+    }
+    .block15{
+        background-color: crimson;
+    }
+
+}
+.container4{
+    display: flex;
+    border-radius: 20px;
+    .block16{
+        width: 20%;
+        height: 60px;
+        background-color: aqua;
+    }
+    .block17{
+        width: 60%;
+        height: 60px;
+        background-color: black;
+    }
+    .block18{
+        width: 20%;
+        height: 60px;
+        background-color: cyan;
+    }
+}
+.container5{
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+
+    .block19{
+        width: 40%;
+        height: 50px;
+        background-color: darkviolet;
+
+    }
+    .block20{
+        width: 30%;
+        height: 50px;
+        background-color: aquamarine;
+      
+    }
+    .block21{
+        width: 30%;
+        height: 50px;
+        background-color: rgb(7, 43, 31)
+       
+}
+}
+.row{
+    border-radius: 20px;
+}
