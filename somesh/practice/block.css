@@ -1,0 +1,64 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blue{
+    width: 50%;
+    height: 180px;
+    background-color: blue;
+    display: flex;
+}
+.blue2{
+    width: 50%;
+    height: 180px;
+    background-color:blueviolet;
+    display: inline-block;
+}
+.black{
+    width:25%;
+    height: 220px;
+    background-color: black;
+    
+}
+.red{
+    width:25%;
+    height: 220px;
+    background-color:crimson;
+    
+}
+.orange{
+    width:25%;
+    height: 220px;
+    background-color:orange;
+ 
+}
+.purple{
+    width:25%;
+    height: 220px;
+    background-color:purple;
+}
+.gold{
+width: 33.33%;
+height: 340px;
+background-color: gold;
+;
+}
+.green{
+    width: 33.33%;
+    height:340px;
+    background-color: green;
+   
+}
+.grey{
+    width: 33.33%;
+    height: 340px;
+    background-color: grey;
+  
+}

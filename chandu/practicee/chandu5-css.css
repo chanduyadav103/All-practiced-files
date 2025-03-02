@@ -1,0 +1,62 @@
+html,
+body {
+   
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: -100%;
+}
+.tree{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+p{
+    font-family: 'Gill Sans', Calibri, sans-serif;
+    color: aliceblue;
+    font-size: 50px;
+    align-items: center;
+}
+
+.branch {
+    height: 200px;
+}
+
+.blueviolet {
+    width:75%;
+    background-color: blueviolet;
+    display: inline-flex;
+}
+
+.blueviole {
+
+    width:25%;
+    background-color: blueviolet;
+    display: inline-flex;
+}
+
+.crimson {
+    background-color: crimson;
+    width:100%;
+}
+
+.orangered1 {
+    width:25%;
+    background-color:black;
+}
+
+.orangered2 {
+    width:25%;
+    background-color:pink;
+}
+
+.orangered3 {
+    width: 25%;
+    background-color:blue;
+}
+
+.orangered4 {
+    width: 25%;
+    background-color: red;
+}

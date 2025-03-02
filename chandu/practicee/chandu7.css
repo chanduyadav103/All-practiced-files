@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.chandu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cha {
+    height: 200px;   
+}
+
+.row {
+    width: 50%;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.vha{
+    height: 200px;
+
+}
+
+.row1 {
+    width: 50%;
+    background-color: blueviolet;
+
+}
+
+.yadav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.sha {
+    height: 200px;
+    align-items: end;
+}
+
+.col {
+    width: 50%;
+    background-color: white;
+
+}

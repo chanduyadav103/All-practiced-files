@@ -1,0 +1,37 @@
+.box{
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    background:linear-gradient(purple,black);
+    font-size: medium;
+    text-align: center;
+    color: white;
+}
+.rectangle{
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    background:linear-gradient(navy,grey);
+    font-size: medium;
+    text-align: right;
+    color: bisque;
+}
+.traingle{
+    width:0px;
+    height:0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid;
+}
+.box2{
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    font-size: medium;
+    text-align: center;
+    color: black;
+    background: linear-gradient(rgb(10, 58, 10),rgb(117, 117, 67),brown);
+}
+.back{
+    background:linear-gradient(white)
+}
