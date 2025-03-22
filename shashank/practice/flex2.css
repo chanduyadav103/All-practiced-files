@@ -1,0 +1,28 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(41, 42, 43);
+}
+.card{
+    height:290px;
+}
+.col{
+    margin-bottom:5px;
+}
+.card1,.card,.card2{
+    background-color: rgb(5, 4, 4);
+    border-radius: 20px;
+}
+.card1,.card2{
+    height: 435px;
+}
+    

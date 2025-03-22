@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+   height: 100%;
+   background-color:lightgray;
+   }
+   .col{
+    margin-bottom: 5px;
+    margin-top: 5px;
+   }
+.planning,.name,.task,.bar,.add,.planning1,.name1,.task1,.bar1,.add1,.planning2,.name2,.task2,.bar2,.add2,.planning3,.name3,.task3,.bar3,.add3{
+  background-color:white;
+  border-radius: 20px;
+}
+.planning,.planning1,.planning2,.planning3,.bar2,.planning3,.bar3{
+  height: 150px;
+}
+.name,.task,.task1,.bar1,.task2,.name3,.task3{
+  height: 210px;
+}
+.bar,.name1,.name2{
+  height: 150px;
+}
+.add,.add1,.add2,.add3{
+  height: 130px;
+}

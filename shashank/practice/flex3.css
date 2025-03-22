@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color:lightgray
+}
+.col{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.earnings,.spending,.sales,.bal,.tas,.projects{
+    height: 100px;
+}
+.earnings,.spending,.sales,.bal,.tas,.projects,.data,.revenue,.table,.traffic,.pie-chart{
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.data,.revenue,.table,.traffic,.pie-chart{
+    height: 390px;
+}
