@@ -2,11 +2,7 @@
     padding-top: 100px;
 }
 
-.chandu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 .h5 {
     color: #c4b4b4;
@@ -17,6 +13,12 @@
     width: 350px;
     height: 400px;
     background-color: #f2f2f2;
+}
+
+.chandu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .h3 {
