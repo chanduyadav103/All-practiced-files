@@ -1,0 +1,159 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: 20px;
+}
+
+.card1 {
+    width: 50%;
+    height: 100%;
+    border: brown;
+    float: left;
+    left: 20px;
+    background-color: blue;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    margin-bottom: 0;
+}
+
+.free {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.dang {
+    padding: 0;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.photo {
+    position: fixed;
+    left: 160px;
+    top: 165px;
+    border-radius: 100px;
+}
+
+.input1 {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    left: 330px;
+    background-color: rgba(128, 128, 128, 0.075);
+    border: 2px solid rgba(128, 128, 128, 0.068);
+}
+
+
+.input2 {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    left: 170px;
+    background-color: rgba(128, 128, 128, 0.075);
+    border: 2px solid rgba(128, 128, 128, 0.075);
+}
+
+.email {
+    width: 310px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    top: 295px;
+    left: 170px;
+    border: 2px solid rgba(128, 128, 128, 0.137);
+    background-color: rgba(128, 128, 128, 0.041);
+}
+
+.password {
+    width: 310px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    top: 350px;
+    left: 170px;
+    border: 2px solid rgba(128, 128, 128, 0.521);
+    background-color: rgba(128, 128, 128, 0.041);
+}
+
+.product {
+    position: fixed;
+    top: 420px;
+    left: 170px;
+    border: 2px solid rgba(128, 128, 128, 0.11);
+    background-color: rgba(128, 128, 128, 0.075);
+}
+
+.chandu {
+    position: fixed;
+    top: 375px;
+    left: 200px;
+
+}
+span{
+    text-decoration: underline;
+}
+
+.check {
+    position: fixed;
+    top: 450px;
+    left: 170px;
+    border: rgba(128, 128, 128, 0.11);
+}
+
+.updates {
+    position: fixed;
+    top: 405px;
+    left: 200px;
+    border: rgba(128, 128, 128, 0.11);
+
+}
+
+.button {
+    background-color: darkgreen;
+    color: white;
+    width: 310px;
+    height: 40px;
+    position: fixed;
+    bottom: 60px;
+    left: 170px;
+    border-radius: 8px;
+    border: none;
+}
+
+.already {
+
+    position: fixed;
+    bottom: 10px;
+    left: 240px;
+}

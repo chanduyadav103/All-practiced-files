@@ -1,0 +1,124 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: darkgreen;
+    font-size: 18px;
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+}
+
+.card1 {
+    width: 350px;
+    height: 240px;
+    position: fixed;
+    left: 470px;
+    padding: 40px;
+    background-color: rgba(128, 128, 128, 0.048);
+}
+
+h4 {
+    margin: 0;
+    position: relative;
+    left: 15px;
+}
+
+.input {
+    width: 330px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 15px;
+}
+
+.password {
+    width: 330px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+
+}
+
+.navigations {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    list-style-type: none;
+    font-size: 30px;
+    margin: 0;
+}
+
+button {
+    position: relative;
+    top: 10px;
+    width: 100px;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00CB18;
+}
+
+.sign {
+    width: 330px;
+    height: 50px;
+    border: none;
+    position: relative;
+    top: 30px;
+    left: 19px;
+    border-radius: 10px;
+    background-color: #00CB18;
+
+}
+
+.forgot {
+    position: relative;
+    left: 180px;
+    bottom: 10px;
+
+}
+
+.terms {
+    display: flex;
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+.labs{
+    position: relative;
+        top: 50px;
+        left: 80px;
+}
