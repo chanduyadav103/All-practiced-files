@@ -1,0 +1,156 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 40%;
+    height: 100%;
+    background-color: blue;
+    float: left;
+    left: 20px;
+    color: white;
+}
+
+.card1 {
+    width: 60%;
+    height: 100%;
+    float: left;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+h2 {
+    padding-left: 50px;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.card2 {
+    width: 370px;
+    height: 400px;
+    padding: 5px;
+}
+
+.welcome {
+    font-size: 24px;
+    margin: 0px;
+}
+
+p {
+    margin: 5px;
+}
+
+.mail {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    font-weight: 14px;
+}
+
+.input {
+    width: 360px;
+    height: 22px;
+    border-radius: 6px;
+    border: rgba(128, 128, 128, 0.349);
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.116);
+}
+
+.pack {
+    margin-top: 20px;
+}
+
+.password {
+    width: 360px;
+    height: 22px;
+    border-radius: 6px;
+    border: rgba(128, 128, 128, 0.575);
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.096);
+}
+
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    color: #FF0000;
+}
+
+.button {
+    background-color: #FF0000;
+    color: white;
+    width: 365px;
+    height: 35px;
+    position: fixed;
+    bottom: 200px;
+    border-radius: 18px;
+    border: none;
+}
+
+.account {
+    font-size: 10px;
+    width: 365px;
+    height: 28px;
+    position: fixed;
+    bottom: 150px;
+    right: 90px;
+}
+
+.photo {
+    position: fixed;
+    bottom: 135px;
+    right: 460px;
+    border-radius: 400%;
+}
+
+.photo1 {
+    position: fixed;
+    bottom: 130px;
+    right: 390px;
+    border-radius: 400%;
+}
+
+.photo2 {
+    position: fixed;
+    bottom: 130px;
+    right: 320px;
+    border-radius: 400%;
+}
+
+span {
+    color: black;
+}
+
+.sign {
+    position: fixed;
+    bottom: 70px;
+    right: 300px;
+    border-radius: 400%;
+}
