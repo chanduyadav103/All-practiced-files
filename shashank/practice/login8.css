@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+main {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-right {
+  width: 40%;
+  height: 100%;
+}
+.imgg {
+  height: 100%;
+  width: 100%;
+}
+.card {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-left {
+  width: 605px;
+  height: 618px;
+}
+h1 {
+  margin-bottom: 12px;
+}
+.about {
+  margin-bottom: 56px;
+}
+.email {
+  margin-top: 8px;
+  margin-bottom: 28px;
+  padding-left: 16px;
+}
+.pswd {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding-left: 16px;
+}
+.btn {
+  width: 100%;
+  height: 46px;
+  border-radius: 6px;
+  background-color: #edf2f7dc;
+  border: none;
+  color: #777e90;
+}
+.fp {
+  text-align: end;
+  color: #ff0000;
+}
+.sign {
+  color: white;
+  border-radius: 90px;
+  background-color: #f54749;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.other {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 20px;
+}
+.social {
+  width: 223px;
+  height: 52px;
+  display: flex;
+  margin: auto;
+}
+.signup {
+  text-align: center;
+  margin-top: 52px;
+}
+.signup > span {
+  color: #141416;
+  font-weight: bold;
+}

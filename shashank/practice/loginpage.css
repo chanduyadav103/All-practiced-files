@@ -1,83 +1,37 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0%;
-  border: 0;
-}
 .container {
-  height: 100%;
+  background-color: black;
   width: 100%;
+  height: 100%;
 }
-.row {
-  height: 100%;
-  width: 100%;
+.login {
   display: flex;
+align-items: center;
+justify-content: center;
 }
-.col1 {
-  height: 100%;
-  width: 50%;
-  background: linear-gradient(to top left, #f9f9f9 50%, #08b96c 50%);
-  padding-left: 40px;
-  padding-top: 50px;
-}
-.left h1 {
-  margin: 0%;
-  font-size: 70px;
+.heading {
   color: white;
-  padding-bottom: 15px;
-  letter-spacing: 3px;
 }
-.left p {
-  font-size: medium;
-  margin: 0%;
-  padding-bottom: 15px;
-  font-size: 25px;
-  letter-spacing: 3px;
-  color: #f9f9f9;
+.another {
+  color: white;
 }
-.left button {
-  margin: 0%;
-  width: 70px;
-  border-radius: 15px;
-  background-color: #08b96c;
-  border-color: rgb(90, 83, 83);
-  width: 120px;
-  height: 25px;
-  border: white solid;
-  color: #f9f9f9;
+.account {
+  color: rgb(28, 210, 28);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
-.col2 {
-  height: 100%;
-  width: 50%;
-  background-color: #f9f9f9;
+.credentials {
+  border: 2px;
+  background-color: rgb(19, 18, 18);
+  height: 500px;
+  width: 300px;
 }
-.rigth {
-  padding-top: 80px;
+.Email {
+  color: white;
 }
-.rigth h1 {
-  font-size: 50px;
+.Password {
+  color: white;
 }
-.field1 {
-  padding-bottom: 25px;
-}
-#field {
-  font-size: 30px;
-}
-.ans {
-  border-radius: 25px;
-  width: 200px;
-  height: 25px;
-}
-.rigth button {
-  border-radius: 25px;
-  width: 210px;
-  height: 35px;
-  margin-top: 20px;
-  background-color: #f9f9f9;
-  border-color: #08b96c;
-  color: #08b96c;
-}
-.fp {
-  color: #08b96c;
+.signup {
+  color: black;
+  background-color: rgb(28, 210, 28);
 }
