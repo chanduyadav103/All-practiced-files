@@ -26,6 +26,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 .right-card-board {
   width: 60%;
@@ -36,8 +37,8 @@ main {
 .btn {
   width: 352px;
   height: 32px;
-  border-radius: 8px;
   border: none;
+  border-radius: 8px;
 }
 .flex {
   display: flex;
@@ -48,7 +49,7 @@ main {
   justify-content: right;
 }
 .bg {
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -75,13 +76,16 @@ h1 {
 .email {
   margin-bottom: 16px;
   background-color: #f6f6f6;
+  padding-left: 9px;
 }
 .pswd {
   margin-bottom: 16px;
   background-color: #f6f6f6;
+  padding-left: 9px;
 }
 .create {
-  margin-top: 170px;
+  padding-top: 295.5px;
+  padding-bottom: 48px;
 }
 label > span {
   padding-left: 124px;
@@ -92,6 +96,6 @@ label > span {
 p > span {
   color: #455eed;
 }
-header {
-  text-align: center;
+.imgs {
+  padding-bottom: 289px;
 }

@@ -1,14 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
 body {
   width: 100%;
   height: 100%;
   margin: 0%;
   padding: 0%;
-  background-color: #ffffff;
-}
-* {
-  box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
+  background-color: #f6f8fb;
 }
 header {
   text-align: center;
@@ -16,6 +16,8 @@ header {
 main {
   width: 100%;
   height: 100%;
+  margin: 0%;
+  padding: 0%;
 }
 .container {
   width: 100%;
@@ -30,8 +32,6 @@ main {
   height: 565.99px;
   background-color: #ffffff;
   border-radius: 6px;
-  border-style: solid;
-  border-color: lightgray;
   padding: 41px;
   margin-top: 24px;
 }
@@ -94,6 +94,7 @@ h1 {
 .field2 {
   margin-top: 8px;
   margin-bottom: 24px;
+  padding-left: 13px;
 }
 p > span {
   color: #117df9;
@@ -101,7 +102,12 @@ p > span {
 .pswd {
   display: flex;
   justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
 }
 .pswd > span {
   color: #117df9;
+}
+.account {
+  padding-top: 23px;
 }
