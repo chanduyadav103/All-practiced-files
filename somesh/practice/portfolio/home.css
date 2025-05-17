@@ -1,0 +1,60 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+
+}
+
+a {
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+}
+
+a:hover {
+    color: #ffff;
+}
+
+
+.side {
+    display: flex;
+    justify-content: end;
+    color: #9d9d9d;
+    font-size: large;
+    gap: 37px;
+    padding-top: 7px;
+    padding-right: 10px;
+}
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: #ffff;
+    position: relative;
+    padding-left: 85px;
+    top: 180px;
+}
+
+.image {
+    width: 40%;
+    position: relative;
+    left: 856px;
+
+    height: 70%;
+
+}
+
+.image>img {
+    width: 62%;
+    height: 69%;
+    border-radius: 39%;
+}

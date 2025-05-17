@@ -8,6 +8,7 @@ body {
 
 * {
     box-sizing: border-box;
+    overflow: hidden;
 
 }
 
@@ -16,21 +17,29 @@ body {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 208px;
-    padding-left: 553px;
-    padding-right: 553px;
+    justify-content: center;
     background-color: #F6F8FB;
 
 }
 
-img {
-    width: 140px;
+.image {
+    background-color: #F6F8FB;
+    padding-left: 354px;
+}
+
+.image>img {
+    padding-left: 330px;
+    padding-top: 55px;
+}
+
+
+.card>img {
     height: 40px;
     margin-bottom: 20px;
     margin-left: 158px;
 
 }
+
 
 .card {
     width: 465px;
@@ -45,7 +54,7 @@ img {
 
 }
 
-.image {
+.image1 {
     width: 40px;
     height: 40px;
     margin: 0;
@@ -70,8 +79,10 @@ img {
     height: 35px;
     background-color: #ffff;
     border-color: #DEE4ED;
+    border-width: 1px;
     border-radius: 5px;
     color: #000000;
+    border: solid 1px #dee4ed;
 }
 
 
@@ -104,7 +115,7 @@ img {
 
 .te {
     font-size: 14px;
-    padding-left: 140px;
+    text-align: center;
 }
 
 .te>span {

@@ -39,9 +39,7 @@ body {
 .login>img {
     width: 140px;
     height: 40px;
-    position: relative;
 
-    top: 90px;
 }
 
 .card {
@@ -58,11 +56,13 @@ body {
     padding-top: 10px;
 }
 
-.card>p {
+label {
     padding-left: 22px;
     color: #344054;
     font-size: 14px;
     font-weight: 400;
+    display: flex;
+    margin-bottom: 8px;
 }
 
 input {
@@ -73,6 +73,7 @@ input {
     border-radius: 10px;
     padding-left: 20px;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 span>p {
@@ -94,7 +95,7 @@ span>input {
 
 .account {
     width: 300px;
-    padding-left: 195px;
+    margin: auto;
 }
 
 p>span {

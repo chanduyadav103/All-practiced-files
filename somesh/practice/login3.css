@@ -6,9 +6,10 @@ body {
     height: 100%;
     background-color: #000;
     box-sizing: border-box;
-    overflow-x: hidden;
-
+    overflow: hidden;
 }
+
+
 
 .container {
     width: 100%;
@@ -16,55 +17,62 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+
+
 
 }
 
 h1 {
     margin: 0;
     margin-bottom: 10px;
-    padding-left: 18px;
+    padding-left: 50px;
+    width: 100%;
 }
 
-.side {
-    width: 1920px;
-    height: 60px;
+header {
+
     display: flex;
     justify-content: end;
-    column-gap: 35px;
-    color: #9AA0A6;
+
+    background-color: #000;
 }
 
-.text {}
-
-.side>span {
+.a1 {
     background-color: #00CB18;
     color: #000000;
+    border-radius: 16px;
+    width: 50px;
+    height: 24px;
+    padding-left: 22px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    margin-right: 10px;
+    font-weight: bold;
 
-    height: 44px;
-    border-radius: 5px;
-    padding-left: 1.67px;
 
 }
 
 .sign {
     color: white;
-    padding-left: 9px;
-    padding-right: 9.28px;
-    padding-top: 99.5px;
+
     width: 308px;
     height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sign>span {
     color: white;
     font-size: 16px;
-    padding-left: 49px;
+
 }
 
 .create {
     text-decoration: underline;
     color: #00CB18;
+    margin-bottom: 20px;
 
 }
 
@@ -78,7 +86,6 @@ h1 {
 
 .card {
     background-color: #141414;
-    position: relative;
     right: 120px;
     height: 325px;
     border-radius: 10px;
@@ -94,19 +101,16 @@ h1 {
     border-radius: 10px;
     width: 418px;
     height: 50px;
-    border: none;
+    margin-top: 6px;
     margin-bottom: 45px;
+    border: solid 1px #3d3d3d;
 }
 
-h4 {
-    margin: 5px;
-    display: contents;
-}
+
 
 .card>span {
     color: #00CB18;
-    position: relative;
-    left: 200px;
+    margin-left: 211px;
 }
 
 
@@ -123,17 +127,17 @@ h4 {
     margin-bottom: 26px;
     width: 422px;
     height: 54px;
+    font-weight: bold;
 }
 
 .box {
-    width: 100%;
-    height: 311px;
-    position: relative;
-    top: 400px;
+    /* width: 100%;
+    height: 311px; */
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    margin-top: 45px;
     color: #9AA0A6;
     column-gap: 50px;
 }
@@ -145,4 +149,16 @@ h4 {
 
 .card2>span {
     color: white;
+}
+
+nav {
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.a {
+    color: #9AA0A6;
+    margin-top: 10px;
+
 }
