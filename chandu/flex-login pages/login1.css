@@ -4,53 +4,41 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .container {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     width: 40%;
     height: 100%;
-    background-color: blue;
-    float: left;
-    left: 20px;
-    color: white;
 }
+
+
+
+.card img {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
 
 .card1 {
     width: 60%;
     height: 100%;
-    float: left;
-    left: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-}
-
-
-h2 {
-    padding-left: 50px;
-    padding-top: 40px;
-    font-weight: bold;
-    font-size: 34px;
-}
-
-h3 {
-    font-weight: bold;
-    font-size: 40px;
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-}
-
-h4 {
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
+    padding-top: 231px;
 }
 
 .card2 {
@@ -79,9 +67,11 @@ p {
     width: 360px;
     height: 22px;
     border-radius: 6px;
-    border: rgba(128, 128, 128, 0.349);
     margin: 0;
-    background-color: rgba(128, 128, 128, 0.116);
+    padding-left: 10px;
+    background-color: #777e902c;
+    border: none;
+    color: #777E90;
 }
 
 .pack {
@@ -92,12 +82,16 @@ p {
     width: 360px;
     height: 22px;
     border-radius: 6px;
-    border: rgba(128, 128, 128, 0.575);
     margin: 0;
-    background-color: rgba(128, 128, 128, 0.096);
+    padding-left: 10px;
+    background-color: #777e9034;
+    border: none;
+    color: #777E90;
 }
 
 .forgot {
+    text-decoration: none;
+    font-size: 11px;
     display: flex;
     justify-content: flex-end;
     color: #FF0000;
@@ -108,8 +102,7 @@ p {
     color: white;
     width: 365px;
     height: 35px;
-    position: fixed;
-    bottom: 200px;
+    margin-top: 20px;
     border-radius: 18px;
     border: none;
 }
@@ -118,30 +111,37 @@ p {
     font-size: 10px;
     width: 365px;
     height: 28px;
-    position: fixed;
-    bottom: 150px;
-    right: 90px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
 }
 
 .photo {
-    position: fixed;
-    bottom: 135px;
-    right: 460px;
-    border-radius: 400%;
+    position: relative;
+    top: 350px;
+    right: 300px;
+    border-radius: 50%;
 }
 
 .photo1 {
-    position: fixed;
-    bottom: 130px;
-    right: 390px;
-    border-radius: 400%;
+
+    position: relative;
+    top: 350px;
+    right: 200px;
+    border-radius: 50%;
 }
 
 .photo2 {
-    position: fixed;
-    bottom: 130px;
-    right: 320px;
-    border-radius: 400%;
+
+    position: relative;
+    top: 350px;
+    right: 120px;
+    border-radius: 50%;
+    border-top-right-radius: 0px;
 }
 
 span {
@@ -149,8 +149,6 @@ span {
 }
 
 .sign {
-    position: fixed;
-    bottom: 70px;
-    right: 300px;
-    border-radius: 400%;
+    padding-top: 100px;
+    text-align: center;
 }

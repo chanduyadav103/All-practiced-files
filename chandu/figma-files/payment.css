@@ -1,0 +1,54 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.payment1 {
+    width: 60%;
+    height: 100%;
+    background-color: #E5E5E5;
+}
+
+.payment2 {
+    width: 40%;
+    height: 100%;
+}
+
+
+
+.down {
+    width: 100%;
+    height: 152px;
+    background-color: #ACB3BC;
+}
+
+.min {
+    width: 100%;
+    height: 152px;
+    background-color: #ACB3BC;
+}
+
+.final {
+    width: 100%;
+    height: 152px;
+    background-color: #ACB3BC;
+}
+
+.additional {
+    width: 100%;
+    height: 151px;
+    background-color: #ACB3BC;
+}

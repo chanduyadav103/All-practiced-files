@@ -4,43 +4,44 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .container {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
     width: 50%;
     height: 100%;
-    float: left;
-    left: 20px;
 }
 
 .card1 {
-    width: 50%;
+    width: 384px;
+    height: 657.05px;   
+}
+
+.card2 {
+    width: 960px;
     height: 100%;
     border: brown;
-    float: left;
-    left: 20px;
-    background-color: blue;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    object-fit: fill;
 }
 
 .start {
     display: flex;
     justify-content: center;
-    padding-top: 60px;
-    margin-bottom: 0;
-}
-
-.free {
-    display: flex;
-    justify-content: center;
     margin: 0;
+    padding-top: 211px;
 }
 
-.dang {
+.f .dang {
     padding: 0;
 }
 
@@ -120,7 +121,8 @@ p {
     left: 200px;
 
 }
-span{
+
+span {
     text-decoration: underline;
 }
 

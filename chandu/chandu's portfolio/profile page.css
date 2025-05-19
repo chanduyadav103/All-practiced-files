@@ -1,0 +1,129 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    background-image: linear-gradient(to right, #614385, #516395);
+}
+
+.container {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, white, #516395);
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 400px;
+
+}
+
+header a {
+    list-style-type: none;
+    margin-left: 50px;
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+
+}
+
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 100px;
+
+}
+
+span {
+    font-size: 80px;
+    color: orangered;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px purple, 0 0 40px purple;
+    animation: glow-border 1.5s infinite alternate;
+}
+
+img:hover {
+    box-shadow: 0 0 40px black;
+}
+
+.role {
+    display: flex;
+    justify-content: center;
+    font-weight: 60px;
+    font-size: 20px;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+}
+
+.btn-hire {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 5px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+.btn-resume {
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 4px solid purple;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

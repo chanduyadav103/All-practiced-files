@@ -1,9 +1,15 @@
-html,
 body {
-    margin: 0;
-    padding: 0;
+    background-color: #d7f1f1;
     width: 100%;
     height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -12,104 +18,136 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0%;
+    padding: 0%;
 }
 
-.img {
-    border-radius: 50px;
+
+
+header {
+    width: 100%;
+    height: 95px;
+}
+
+header img {
+    position: relative;
+    top: 26px;
+    left: 39px;
 }
 
 .card {
-    width: 450px;
-    height: 450px;
-    background-color: #FDFDFD;
+    width: 500px;
+    height: 687px;
     border-radius: 24px;
-    margin: 20px;
-}
-
-.h1 {
-    width: 450px;
-    height: 80px;
+    background-color: #fdfdfd;
     display: flex;
     justify-content: center;
-    border-radius: 24px;
+    padding: 40px;
+    margin: 0;
+}
+
+.account {
+    width: 420px;
+    height: 85px;
+
+}
+
+h1 {
+    width: 420px;
+    height: 85px;
+    font-size: 26px;
+    font-weight: 420px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.demo {
+    display: flex;
+    justify-content: center;
+
 }
 
 .google {
-    width: 450px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    border-radius: 24px;
-    background-color: rgba(128, 128, 128, 0.178);
-    margin: 10px;
-}
-
-.apple {
-    width: 450px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    border-radius: 24px;
-    background-color: rgba(128, 128, 128, 0.178);
-    margin: 10px;
-}
-
-.slack {
-    width: 450px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    border-radius: 24px;
-    background-color: rgba(128, 128, 128, 0.178);
-    margin: 10px;
-}
-
-.slack {
-    width: 450px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    border-radius: 24px;
-    background-color: rgba(128, 128, 128, 0.178);
-    margin: 10px;
-}
-
-.email {
-    width: 450px;
-    height: 50px;
-    padding-left: 10px;
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 24px;
-    background-color: rgba(128, 128, 128, 0.178);
-    margin: 10px;
-}
-
-.continue {
-    width: 450px;
-    height: 50px;
-    background-color: blue;
-    color: #FDFDFD;
+    width: 420px;
+    height: 44px;
+    background-color: #686f7d1a;
+    border-radius: 50px;
+    border: none;
+    font: #686F7D;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 24px;
-    border: none;
+    padding-left: 5px;
+    font-size: 14px;
+    row-gap: 5px;
     margin: 10px;
-    font-size: 20px;
 }
 
-.product {
-    width: 400px;
-    height: 70px;
-    font-size: 20px;
-    border-radius: 10px;
-    
-    background-color: rgba(128, 128, 128, 0.178);
+img {
+    display: flex;
+    justify-content: center;
+}
+
+.hr {
+    padding-right: 5px;
+    width: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin-top: 20px;
+    width: 420px;
+    height: 42px;
+    border: 1px solid#686f7d3a;
+    padding-left: 20px;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 420px;
+    height: 42px;
+    background-color: #1668E3;
+    color: #FDFDFD;
+    padding-left: 20px;
+    border: none;
+    border-radius: 50px
 }
 
 .agree {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+}
 
+span {
+    text-decoration: solid;
+}
+
+.produck {
+    width: 420px;
+    height: 150px;
+    display: flex;
+}
+
+.help {
+    width: 226px;
+    height: 90px;
+    font-size: 14px;
+    font-weight: #5E646E;
+    padding-top: 20px;
+}
+
+.img {
+    position: relative;
+    left: 270px;
+    bottom: 70px;
+}
+
+.join {
+    font-weight: bold;
+    
 }
