@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: poppins;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.bg-section {
+  height: 356px;
+}
+
+.circle {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.circle-1 {
+  background-color: rgba(49, 67, 89, 0.4);
+  width: 571px;
+  height: 571px;
+  position: absolute;
+  top: -215px;
+  left: 242px;
+}
+
+.circle-2 {
+  background-color: rgba(49, 67, 89, 0.6);
+  width: 418px;
+  height: 418px;
+}
+
+.circle-3 {
+  background-color: rgba(49, 67, 89, 0.8);
+  width: 266px;
+  height: 266px;
+}
+
+.circle-4 {
+  background-color: rgba(49, 67, 89, 1);
+  width: 114px;
+  height: 114px;
+}
+
+.left-section > p {
+  font-size: 160px;
+  font-weight: bold;
+}
+
+.right-section {
+  width: 595px;
+  height: 304px;
+}
+.num {
+  width: 60px;
+  height: 60px;
+  margin-top: 40px;
+}
+.small {
+  width: 60px;
+  height: 60px;
+  margin-top: 40px;
+}
+.heading {
+  color: #304258;
+  line-height: 200px;
+}
+.foot {
+  color: #6e7885;
+}
+.heading2 {
+  width: 263px;
+  height: 40px;
+  color: #304258;
+  font-weight: bold;
+  font-size: 35px;
+}
+.text {
+  width: 595px;
+  height: 108x;
+  color: #6e7885;
+  font-size: 20px;
+}

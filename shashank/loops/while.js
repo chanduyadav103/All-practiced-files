@@ -1,0 +1,61 @@
+const { isAPIResponseError } = require("@ionic/cli");
+
+const bikes = [
+    { id: 1, brand: "Royal Enfield", model: "Classic 350", color: "Black", price: 190000, mileage: "35 kmpl", engine: "346cc", fuelType: "Petrol", year: 2023, rating: 4.5 },
+    { id: 2, brand: "Bajaj", model: "Pulsar 220F", color: "Red", price: 140000, mileage: "40 kmpl", engine: "220cc", fuelType: "Petrol", year: 2022, rating: 4.2 },
+    { id: 3, brand: "TVS", model: "Apache RTR 160", color: "Blue", price: 120000, mileage: "45 kmpl", engine: "160cc", fuelType: "Petrol", year: 2023, rating: 4.0 },
+    { id: 4, brand: "Hero", model: "Splendor Plus", color: "Black", price: 75000, mileage: "60 kmpl", engine: "97.2cc", fuelType: "Petrol", year: 2022, rating: 4.3 },
+    { id: 5, brand: "Honda", model: "Shine", color: "Silver", price: 80000, mileage: "65 kmpl", engine: "125cc", fuelType: "Petrol", year: 2023, rating: 4.4 },
+    { id: 6, brand: "Yamaha", model: "MT-15", color: "Blue", price: 165000, mileage: "45 kmpl", engine: "155cc", fuelType: "Petrol", year: 2023, rating: 4.6 },
+    { id: 7, brand: "KTM", model: "Duke 200", color: "Orange", price: 210000, mileage: "35 kmpl", engine: "199.5cc", fuelType: "Petrol", year: 2022, rating: 4.7 },
+    { id: 8, brand: "Suzuki", model: "Gixxer SF", color: "Black", price: 145000, mileage: "45 kmpl", engine: "155cc", fuelType: "Petrol", year: 2023, rating: 4.1 },
+    { id: 9, brand: "Royal Enfield", model: "Himalayan", color: "Green", price: 220000, mileage: "30 kmpl", engine: "411cc", fuelType: "Petrol", year: 2022, rating: 4.4 },
+    { id: 10, brand: "Bajaj", model: "Dominar 400", color: "Black", price: 240000, mileage: "27 kmpl", engine: "373.3cc", fuelType: "Petrol", year: 2023, rating: 4.3 }
+];
+///   way1 to while loop   ////
+let i = 0;
+while (i < bikes.length) {
+    console.log(bikes[i])
+    i = ++i
+}
+
+
+
+console.log("----------------------------------------------------------------------")
+console.log("----------------------------------------------------------------------")
+console.log("----------------------------------------------------------------------")
+
+
+
+///   or   ////
+
+i = 0;
+while (i < bikes.length) {
+    console.log(bikes[i])
+    i++
+
+}
+
+
+/// infinite loop ///
+
+
+// i = 0;
+// while (i < bikes.length) {
+//     console.log(bikes[i])
+//     i = i++
+// }
+
+
+console.log("----------------------------------------------------------------------")
+
+i = 0
+while (i < bikes.length) {
+    console.log(bikes[i].id, bikes[i].brand, bikes[i].model, bikes[i].color, bikes[i].price, bikes[i].mileage, bikes[i].engine, bikes[i].fuelType, bikes[i].year, bikes[i].rating)
+    console.log(`Id; ${bikes[i].id}\nBrand: ${bikes[i].brand}\nModel: ${bikes[i].model}\nColor: ${bikes[i].color}\nPrice: ${bikes[i].price}\nMileage: ${bikes[i].mileage}\nEngine: ${bikes[i].engine}\nFuelType: ${bikes[i].fuelType}\nYear: ${bikes[i].year}\nRating: ${bikes[i].rating}`)
+    i++
+}
+
+
+
+
