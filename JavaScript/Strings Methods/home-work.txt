@@ -1,0 +1,96 @@
+Length Checker
+- Write a function isLong(str, minLength) that returns true if str has at least minLength characters, otherwise false.
+
+First and Last Character
+- Write a function getFirstAndLast(str) that returns the first and last characters of str as a combined string.
+
+ASCII Value Finder
+- Write a function getASCII(char) that returns the ASCII value of a given character using charCodeAt().
+
+Case Insensitive Comparison
+- Write a function areEqualIgnoreCase(str1, str2) that checks if two strings are equal (case-insensitive).
+
+Truncate String
+- Write a function truncate(str, maxLength) that shortens str to maxLength and adds "..." if truncated.
+
+Find Position of a Substring
+- Write a function findSubstring(str, sub) that returns the starting index of sub in str (or -1 if not found).
+
+Check if String Starts with a Prefix
+- Write a function startsWithPrefix(str, prefix) that returns true if str starts with prefix.
+
+Check if String Ends with a Suffix
+- Write a function endsWithSuffix(str, suffix) that returns true if str ends with suffix.
+
+Extract a Substring Between Two Words
+- Write a function extractBetween(str, startWord, endWord) that extracts text between startWord and endWord.
+
+Count Occurrences of a Character
+- Write a function countChar(str, char) that counts how many times char appears in str.
+
+Replace All Occurrences
+- Write a function replaceAllOccurrences(str, oldWord, newWord) that replaces every oldWord with newWord in str.
+
+Remove Whitespace from Both Ends
+- Write a function trimWhitespace(str) that removes extra spaces from the start and end of str.
+
+Remove Whitespace from Start Only
+- Write a function trimStartWhitespace(str) that removes extra spaces only from the start.
+
+Remove Whitespace from End Only
+- Write a function trimEndWhitespace(str) that removes extra spaces only from the end.
+
+Convert to Camel Case
+- Write a function toCamelCase(str) that converts "hello world" to "helloWorld".
+
+Split into Words
+- Write a function splitIntoWords(str) that splits str into an array of words (split by spaces).
+
+Join Words with a Separator
+- Write a function joinWords(words, separator) that joins an array of words with separator.
+
+Extract File Extension
+- Write a function getFileExtension(filename) that extracts the extension (e.g., "txt" from "file.txt").
+
+Reverse Words in a Sentence
+- Write a function reverseWords(sentence) that reverses each word but keeps the sentence order.
+
+Capitalize First Letter of Each Word
+- Write a function capitalizeWords(str) that capitalizes the first letter of each word.
+
+Check if a String is a Palindrome
+- Write a function isPalindrome(str) that returns true if str reads the same backward.
+
+Count Vowels in a String
+- Write a function countVowels(str) that counts the number of vowels (a, e, i, o, u).
+
+Remove All Duplicate Characters
+- Write a function removeDuplicates(str) that keeps only the first occurrence of each character.
+
+Mask Email Address
+- Write a function maskEmail(email) that hides part of an email (e.g., "user@example.com" → "u***@example.com").
+
+Validate a Password
+- Write a function validatePassword(password) that checks if a password:
+
+Has at least 8 characters.
+
+Contains at least one uppercase letter.
+
+Contains at least one digit.
+
+
+Find the Longest Word
+- Write a function longestWord(str) that returns the longest word in a sentence.
+
+Convert String to Slug (URL-Friendly)
+- Write a function toSlug(str) that converts "Hello World" to "hello-world".
+
+Count Words in a String
+- Write a function countWords(str) that returns the number of words in str.
+
+Check if Two Strings are Anagrams
+- Write a function areAnagrams(str1, str2) that checks if two strings contain the same letters.
+
+Generate a Random Alphanumeric ID
+- Write a function generateRandomID(length) that creates a random string of given length.
