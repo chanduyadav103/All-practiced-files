@@ -475,7 +475,7 @@ mobiles.forEach((value, index, array) => {
     console.log("INDEX:", index)
     console.log(value)
 });
-
+console.log("--------------------------------------------------");
 function filter() {
     return mobiles.filter(mobile => mobile.brand === "Realme")
 }
