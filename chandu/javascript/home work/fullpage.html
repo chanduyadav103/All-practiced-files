@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Simple Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            height: 80px;
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            margin-top: 5px;
+        }
+
+        nav a,
+        .dropbtn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 120px;
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px 14px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content {
+            flex: 1;
+            padding: 30px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #222;
+            color: white;
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function createHeader() {
+            const header = document.createElement("div");
+            header.className = "header";
+
+            const title = document.createElement("h1");
+            title.textContent = "My Simple Website";
+
+            const nav = document.createElement("nav");
+
+            const home = document.createElement("a");
+            home.href = "#";
+            home.textContent = "Home";
+
+            const dropdown = document.createElement("div");
+            dropdown.className = "dropdown";
+
+            const dropbtn = document.createElement("button");
+            dropbtn.className = "dropbtn";
+            dropbtn.textContent = "Menu ▼";
+
+            const dropdownContent = document.createElement("div");
+            dropdownContent.className = "dropdown-content";
+
+            const about = document.createElement("a");
+            about.href = "#";
+            about.textContent = "About";
+
+            const services = document.createElement("a");
+            services.href = "#";
+            services.textContent = "Services";
+
+            const contact = document.createElement("a");
+            contact.href = "#";
+            contact.textContent = "Contact";
+
+            dropdownContent.appendChild(about);
+            dropdownContent.appendChild(services);
+            dropdownContent.appendChild(contact);
+
+            dropdown.appendChild(dropbtn);
+            dropdown.appendChild(dropdownContent);
+
+            nav.appendChild(home);
+            nav.appendChild(dropdown);
+
+            header.appendChild(title);
+            header.appendChild(nav);
+            document.body.appendChild(header);
+        }
+
+        // Main content
+        function createContent() {
+            const content = document.createElement("div");
+            content.className = "content";
+            content.innerHTML = `
+        <h2>Welcome!</h2>
+        <p>This is a fully working website made only using JavaScript functions!</p>
+        <p>You can explore the menu, and build more pages the same way.</p>
+      `;
+            document.body.appendChild(content);
+        }
+
+        // Footer
+        function createFooter() {
+            const footer = document.createElement("div");
+            footer.className = "footer";
+            footer.textContent = "© 2025 My Simple Website. All rights reserved.";
+            document.body.appendChild(footer);
+        }
+
+        // Combine everything
+        function createWebsite() {
+            createHeader();
+            createContent();
+            createFooter();
+        }
+
+        // Run website
+        createWebsite();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 32px;
+        }
+
+        .center {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border-radius: 20px;
+            width: 500px;
+            height: 260px;
+            background-color: blueviolet;
+            box-shadow: 4px 4px rgba(137, 43, 226, 0.483);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let containerTag;
+        let cardTag;
+
+        function createCard() {
+            cardTag = document.createElement('div');
+            cardTag.setAttribute('class', 'card center');
+            containerTag.appendChild(cardTag);
+            appendContainerToBody();
+        }
+
+        function createContainer() {
+            containerTag = document.createElement('div');
+            containerTag.setAttribute('class', 'container center');
+            createCard();
+        }
+
+        function appendContainerToBody() {
+            document.body.appendChild(containerTag);
+            setContentInCardTag();
+        }
+
+        function setContentInCardTag() {
+            const pTag = document.createElement('p');
+            pTag.innerText = "Hey Chandu!";
+            cardTag.appendChild(pTag);
+        }
+
+
+        createContainer();
+    </script>
+
+</body>
+
+</html>

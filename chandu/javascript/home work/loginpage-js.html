@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+
+<body>
+
+
+    <script>
+        let containertag;
+        let cardtag;
+        function createheader() {
+            let headertag = document.createElement('div');
+            headertag.setattribute('class', 'header')
+            headertag.innertext = ''
+        }
+
+        function createContainer() {
+            containertag = document.createElement('div');
+            containertag.setAttribute('class', 'center');
+            document.body.appendChild(containertag);
+            createCardForLogin();
+        }
+
+        function createCardForLogin() {
+            cardtag = document.createElement('div');
+            cardtag.setAttribute('class', 'card-1');
+            containertag.appendChild(cardtag);
+            setContentForInputs();
+        }
+
+        function setContentForInputs() {
+            const heading = document.createElement('h2');
+            heading.innerText = "Login Here";
+            heading.style.textAlign = "center";
+            cardtag.appendChild(heading);
+
+            const email = document.createElement('input');
+            email.placeholder = 'Enter your email';
+            email.type = "email";
+            email.id = "email";
+            cardtag.appendChild(email);
+
+            const password = document.createElement('input');
+            password.type = 'password';
+            password.placeholder = 'Enter your password';
+            password.id = 'password';
+            cardtag.appendChild(password);
+
+            const button = document.createElement('button');
+            button.innerText = "Login";
+            cardtag.appendChild(button);
+        }
+
+        createContainer();
+    </script>
+
+</body>
+
+</html>

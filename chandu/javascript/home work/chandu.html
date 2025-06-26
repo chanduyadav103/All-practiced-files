@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: darkblue;
+        }
+
+        .container {
+            padding: 32px;
+
+        }
+
+        .center {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-1 {
+            width: 450px;
+            height: 600px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            width: 80%;
+            height: 25px;
+            color: white;
+            background-color: blueviolet;
+        }
+
+
+
+        button {
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: blue;
+            color: black;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let containertag;
+        let cardtag;
+
+        function createCard() {
+            cardtag = document.createElement('div');
+            cardtag.setAttribute('class', 'card-1');
+            containertag.appendChild(cardtag);
+            setContentForInputs();
+        }
+
+        function createContainer() {
+            containertag = document.createElement('div');
+            containertag.setAttribute('class', 'center');
+            createCard();
+        }
+
+        function appendContainerToBody() {
+            document.body.appendChild(containertag);
+        }
+
+        function setContentForInputs() {
+            const heading = document.createElement('h2');
+            heading.innerText = "Login Here";
+            heading.style.textAlign = "center";
+            cardtag.appendChild(heading);
+
+            const email = document.createElement('input');
+            email.placeholder = 'Enter your email';
+            email.type = "email";
+            email.id = "email";
+            cardtag.appendChild(email);
+
+            const password = document.createElement('input');
+            password.type = 'password';
+            password.placeholder = 'Enter your password';
+            password.id = 'password';
+            cardtag.appendChild(password);
+
+            const button = document.createElement('button');
+            button.innerText = "Login";
+            cardtag.appendChild(button);
+        }
+
+        createContainer();
+        appendContainerToBody();
+    </script>
+
+
+</body>
+
+</html>

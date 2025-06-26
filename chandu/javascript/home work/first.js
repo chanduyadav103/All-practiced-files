@@ -215,8 +215,6 @@ labelArray([22, 54, 76, 45, 89]);
 
 
 function numbers(num) {
-    for (i = 0; i >= 5; i++) {
-        console.log("chandu")
-    }
 }
-numbers(20)
+
+numbers()

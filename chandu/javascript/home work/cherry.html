@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Form</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 400px;
+            background-color: blueviolet;
+            padding: 20px 30px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+        .name,
+        .mail,
+        .pass,
+        .number {
+            width: 100%;
+            height: 30px;
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            border-radius: 16px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .select {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-size: 18px;
+            color: white;
+        }
+
+        .head {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .btn {
+            width: 200px;
+            height: 45px;
+            background-color: blue;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form" onsubmit="return false;">
+        <div class="card">
+            <h1 class="head">Welcome to the Future of Riding</h1>
+
+            <label class="label" for="name">Customer name</label>
+            <input class="name" id="name" type="text" placeholder="Enter your name" />
+
+            <label class="label" for="email">Customer mail</label>
+            <input class="mail" id="email" type="email" placeholder="Enter your email" />
+
+            <label class="label" for="password">Customer password</label>
+            <input class="pass" id="password" type="password" placeholder="Enter your password" />
+
+            <label class="label"><b>Select vehicle</b></label>
+            <div class="select">
+                <label><input type="radio" name="vehicle" value="BMW" /> BMW</label>
+                <label><input type="radio" name="vehicle" value="Duke" /> Duke</label>
+            </div>
+
+            <label class="label" for="number">Number</label>
+            <input class="number" id="number" type="number" placeholder="Enter your phone number" />
+
+            <button class="btn" type="button" onclick="login()">Login Here</button>
+            <button class="btn" type="button" onclick="get()">Get Credential</button>
+            <button class="btn" type="button" onclick="remove()">Remove Credential</button>
+        </div>
+    </form>
+
+    <script>
+        function login() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const number = document.getElementById('number').value.trim();
+            const vehicle = document.querySelector('input[name="vehicle"]:checked');
+
+            if (!name || !email || !password || !vehicle || !number) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            const userData = {
+                name,
+                email,
+                password,
+                number,
+                vehicle: vehicle.value
+            };
+
+            localStorage.setItem("userData", JSON.stringify(userData));
+            alert("Login credentials saved successfully.");
+        }
+
+        function get() {
+            const data = localStorage.getItem("userData");
+            if (data) {
+                const user = JSON.parse(data);
+                alert(`Name: ${user.name}
+Email: ${user.email}
+Password: ${user.password}
+Vehicle: ${user.vehicle}
+Phone: ${user.number}`);
+            } else {
+                alert("No credential found.");
+            }
+        }
+
+        function remove() {
+            localStorage.removeItem("userData");
+            alert("Credential removed successfully.");
+        }
+    </script>
+</body>
+
+</html>
