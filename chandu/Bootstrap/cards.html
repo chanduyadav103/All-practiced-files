@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>basic cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .fixed-col {
+            width: 200px;
+            margin: 10px;
+        }
+
+        .card-box {
+            height: 190px;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .row-fixed {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        header {
+            max-height: 250px;
+        }
+
+        .header-title {
+            background-color: #add8e6;
+            color: #1c86c4;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <header>
+        <div class="text-center ">
+            <h2 class="fw-bold header-title">great Your response is successfully saved</h2>
+        </div>
+    </header>
+
+    <div class="text-center mt-5">
+        <h4 class="lead"> hi,choose a card below and start creating with Microsoft forms </h4>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row-fixed">
+            <div class="fixed-col">
+                <div class="card-box" style="background: linear-gradient(to bottom, #3C97D3, #4AB6E0);">
+                    <h5>Feedback</h5>
+                </div>
+            </div>
+            <div class="fixed-col">
+                <div class="card-box" style="background: linear-gradient(to bottom, #f5b428, #f5c02e);">
+                    <h5>Registration</h5>
+                </div>
+            </div>
+            <div class="fixed-col">
+                <div class="card-box" style="background: linear-gradient(to bottom, #3e24d4, #2f49dd);">
+                    <h5>Research</h5>
+                </div>
+            </div>
+            <div class="fixed-col">
+                <div class="card-box" style="background: linear-gradient(to bottom, #e72898, #dd2fc0);">
+                    <h5>Quiz</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
