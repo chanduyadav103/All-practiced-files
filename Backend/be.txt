@@ -1,0 +1,17 @@
+APIs:
+
+API Methods:
+ 1. GET
+ 2. POST
+ 3. PUT
+ 4. DELETE
+
+
+Pre:
+-> JavaScript/TypeScript
+-> NodeJS
+-> DataBase
+-> DBMS
+-> VS Code
+-> Postman
+-> NPM - Node Package Manager

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./local-storage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="class-page">
+        <h1>Job Registration Form</h1>
+        <div>
+          <label>Full name</label>
+          <input type="text" placeholder="First Name" class="fn" id="fn" />
+          <input type="text" placeholder="Last name" class="fn" id="ln" />
+        </div>
+        <div>
+          <label> Current Address</label>
+          <input type="text" placeholder="Address" class="ca" id="add" />
+          <input type="text" placeholder="City" class="ca" id="city" />
+          <input type="text" placeholder="Country" class="ca" id="con" />
+        </div>
+        <div>
+          <label for="pnum">Phone number</label>
+          <input
+            type="number"
+            placeholder="Phone Number"
+            id="pnum"
+            class="pn"
+          />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            placeholder="funcky1234@gmail.com"
+            class="em"
+            id="eml"
+          />
+        </div>
+        <div>
+          <label for="cmpny">Company / Organization</label>
+          <input
+            type="text"
+            id="cmpny"
+            placeholder="Company you need to join"
+            class="cmp"
+          />
+        </div>
+        <div>
+          <label for="jtitle">Job role</label>
+          <input
+            type="text"
+            placeholder="Job your searching"
+            id="jtitle"
+            class="jt"
+          />
+        </div>
+        <div>
+          <label for="Pexp">Experience</label>
+          <input
+            type="text"
+            placeholder="Experience or Course you attended"
+            id="Pexp"
+            class="pe"
+          />
+        </div>
+        <button class="bn" onclick="toStoreData()">Submit</button>
+        <button class="bn" onclick="toGetCredentials()">Get credentials</button>
+        <button class="bn" onclick="ToRemoveCredentials()">
+          Remove credentials
+        </button>
+        <script src="./local-storage.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

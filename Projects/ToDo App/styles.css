@@ -1,0 +1,135 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #8bd0ff;
+    display: flex;
+}
+
+.btn {
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 1px solid #d7d7d7;
+    height: 46px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn-warning {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: #222;
+}
+
+.btn-danger {
+    background-color: crimson;
+    border: 1px solid crimson;
+    color: #fff;
+}
+
+/* Left Section */
+
+.left-section {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    padding: 64px;
+}
+
+.app-heading {
+    font-weight: 900;
+    margin: 0;
+}
+
+.app-sub-heading {
+    font-weight: 500;
+    margin: 0;
+    margin-top: 4px;
+    font-style: italic;
+    text-decoration: overline;
+}
+
+form {
+    margin-top: 24px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-bottom: 24px;
+}
+
+.form-label {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 1px solid #d7d7d7;
+    height: 32px;
+}
+
+.form-textarea {
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 1px solid #d7d7d7;
+}
+
+
+/* Right Section */
+
+.right-section {
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid #FFFFFF;
+}
+
+.todos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 32px;
+    row-gap: 10px;
+}
+
+.todo {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    width: 90%;
+}
+
+.todo-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.todo-description {
+    color: #2222228f;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.todo-actions {
+    display: flex;
+    column-gap: 10px;
+}
+
+.todo-actions>.btn {
+    width: 80px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 36px;
+}

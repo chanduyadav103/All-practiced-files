@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.card {
+  width: 500px;
+  height: 350px;
+  background-color: rgb(16, 13, 13);
+  border-radius: 20px;
+  border: 10px rgb(40, 34, 34);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.title {
+  color: rgb(131, 104, 104);
+  text-align: center;
+}
+.input-feild {
+  width: 480px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  margin-top: 20px;
+}
+.input-feild::placeholder {
+  font-size: 15px;
+  padding-left: 10px;
+}
+.btn {
+  width: 480px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  margin-top: 20px;
+}
+.forgtpswd {
+  font-size: 15px;
+  color: rgb(131, 104, 104);
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

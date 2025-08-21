@@ -1,0 +1,340 @@
+[
+    {
+        "brand": "Royal Enfield",
+        "name": "Classic 350",
+        "model": "Classic 350 (J-series)",
+        "engine": "349cc, air-oil cooled, single-cylinder",
+        "torque": "27 Nm @ 4000 rpm",
+        "bhp": "20.2 bhp @ 6100 rpm",
+        "colour": [
+            "Halcyon Green",
+            "Signals Marsh Grey",
+            "Chrome Red"
+        ],
+        "price": "₹1.97–2.35 lakh (ex‑showroom)",
+        "mileage": "32–38 kmpl (owner reported/claimed)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "4.2/5 (ZigWheels users)",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Royal_Enfield_Classic_350.jpg"
+    },
+    {
+        "brand": "KTM",
+        "name": "390 Duke",
+        "model": "390 Duke (2024)",
+        "engine": "398.7cc, liquid-cooled, single-cylinder",
+        "torque": "39 Nm",
+        "bhp": "45.3 bhp (33.5 kW)",
+        "colour": [
+            "Electronic Orange",
+            "Atlantic Blue"
+        ],
+        "price": "≈₹3.11 lakh (ex‑showroom)",
+        "mileage": "25–30 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "4.6/5 (ZigWheels users)",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Moscow%2C_KTM_Duke_390_motorcycle_September_2024_05.jpg"
+    },
+    {
+        "brand": "Yamaha",
+        "name": "R15 V4",
+        "model": "YZF-R15 Version 4.0",
+        "engine": "155cc, liquid-cooled, single-cylinder, VVA",
+        "torque": "14.2 Nm @ 7500 rpm",
+        "bhp": "18.4 PS @ 10000 rpm",
+        "colour": [
+            "Metallic Red",
+            "Racing Blue",
+            "Dark Knight"
+        ],
+        "price": "≈₹1.83–1.98 lakh (ex‑showroom)",
+        "mileage": "45 kmpl (claimed)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "4.5/5 (ZigWheels users)",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Yamaha_R15_v4_bike.jpg"
+    },
+    {
+        "brand": "Royal Enfield",
+        "name": "Himalayan 450",
+        "model": "Himalayan 452 (new-gen)",
+        "engine": "452cc, liquid-cooled, single-cylinder",
+        "torque": "40 Nm @ 5500 rpm",
+        "bhp": "39.5 bhp @ 8000 rpm",
+        "colour": [
+            "Hanle Black",
+            "Kamet White",
+            "Slate Himalayan Salt"
+        ],
+        "price": "₹2.85–3.09 lakh (ex‑showroom)",
+        "mileage": "30–32 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Royal-Enfield-Himalayan-450.jpg"
+    },
+    {
+        "brand": "Triumph",
+        "name": "Speed 400",
+        "model": "Speed 400 (India)",
+        "engine": "398cc, liquid-cooled, single-cylinder",
+        "torque": "37.5 Nm @ 6500 rpm",
+        "bhp": "39.5 bhp @ 8000 rpm",
+        "colour": [
+            "Phantom Black/Storm Grey",
+            "Carnival Red/Storm Grey",
+            "Casper White/Storm Grey"
+        ],
+        "price": "₹2.34–2.44 lakh (ex‑showroom)",
+        "mileage": "28–30 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Triumph_motorcycles_logo.jpg"
+    },
+    {
+        "brand": "Hero x Harley-Davidson",
+        "name": "Harley-Davidson X440",
+        "model": "X440",
+        "engine": "440cc, air-oil cooled, single-cylinder",
+        "torque": "38 Nm",
+        "bhp": "27 bhp (approx, official site lists torque; power varies by reviews)",
+        "colour": [
+            "Denim Black",
+            "Vivid Red",
+            "S (Top) Tank Graphics"
+        ],
+        "price": "₹2.39–2.79 lakh (ex‑showroom)",
+        "mileage": "30–35 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Harley_Davidson_%281%29.jpg"
+    },
+    {
+        "brand": "Bajaj",
+        "name": "Pulsar N250 (2024)",
+        "model": "N250 Dual-Channel ABS (refresh)",
+        "engine": "249cc, oil-cooled, single-cylinder",
+        "torque": "21.5 Nm @ 6500 rpm",
+        "bhp": "24.5 PS @ 8750 rpm",
+        "colour": [
+            "Brooklyn Black (new graphics)",
+            "Red",
+            "Blue"
+        ],
+        "price": "≈₹1.51–1.60 lakh (ex‑showroom)",
+        "mileage": "42–43 kmpl (owner reported/claimed)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Bajaj_pulsar.jpg"
+    },
+    {
+        "brand": "TVS",
+        "name": "Apache RTR 160 4V",
+        "model": "RTR 160 4V",
+        "engine": "159.7cc, oil-cooled, single-cylinder",
+        "torque": "14.7 Nm @ 7250 rpm",
+        "bhp": "17.55 PS @ 9250 rpm",
+        "colour": [
+            "Knight Black",
+            "Racing Red",
+            "Metallic Blue"
+        ],
+        "price": "₹1.24–1.34 lakh (ex‑showroom)",
+        "mileage": "45–50 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://images.tvsmotor.com/sites/default/files/2023-09/tvs-apache-rtr-160-4v.png"
+    },
+    {
+        "brand": "Suzuki",
+        "name": "Gixxer SF 250",
+        "model": "SF 250",
+        "engine": "249cc, oil-cooled, single-cylinder",
+        "torque": "22.2 Nm @ 7300 rpm",
+        "bhp": "26.5 PS @ 9300 rpm",
+        "colour": [
+            "Metallic Matte Stellar Blue",
+            "Metallic Sonic Silver"
+        ],
+        "price": "₹1.92–2.06 lakh (ex‑showroom)",
+        "mileage": "35–38 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Suzuki_logo_2.jpg"
+    },
+    {
+        "brand": "TVS",
+        "name": "Apache RR 310",
+        "model": "RR 310 (BS6)",
+        "engine": "312.2cc, liquid-cooled, single-cylinder",
+        "torque": "27.3 Nm @ 7700 rpm",
+        "bhp": "34 PS @ 9700 rpm",
+        "colour": [
+            "Racing Red",
+            "Phantom Black"
+        ],
+        "price": "≈₹2.72 lakh (ex‑showroom)",
+        "mileage": "30–34 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/1/10/TVS_logo_2016.png"
+    },
+    {
+        "brand": "Hero",
+        "name": "Splendor Plus Xtec",
+        "model": "Splendor+ Xtec",
+        "engine": "97.2cc, air-cooled, single-cylinder",
+        "torque": "8.05 Nm @ 6000 rpm",
+        "bhp": "8.02 PS @ 8000 rpm",
+        "colour": [
+            "Pearl White",
+            "Matte Shield Gold",
+            "Canvas Black"
+        ],
+        "price": "₹75,000–82,000 (ex‑showroom)",
+        "mileage": "65–70 kmpl (owner reported/claimed)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Hero_MotoCorp_logo.png"
+    },
+    {
+        "brand": "Hero",
+        "name": "Xpulse 200 4V",
+        "model": "Xpulse 200 4V",
+        "engine": "199.6cc, oil-cooled, single-cylinder",
+        "torque": "17.35 Nm @ 6500 rpm",
+        "bhp": "19.17 PS @ 8500 rpm",
+        "colour": [
+            "Sports Red",
+            "Pearl Silver White",
+            "Matte Nexus Blue"
+        ],
+        "price": "₹1.46–1.53 lakh (ex‑showroom)",
+        "mileage": "35–40 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Hero_MotoCorp_logo.png"
+    },
+    {
+        "brand": "Jawa (Classic Legends)",
+        "name": "42 Bobber",
+        "model": "Forty Two Bobber",
+        "engine": "334cc, liquid-cooled, single-cylinder",
+        "torque": "32.7 Nm",
+        "bhp": "29.9 PS",
+        "colour": [
+            "Moonstone White",
+            "Mystic Copper",
+            "Jasper Red Dual Tone"
+        ],
+        "price": "₹2.12–2.29 lakh (ex‑showroom)",
+        "mileage": "30–33 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Jawa_motorcycle_logo.png"
+    },
+    {
+        "brand": "Kawasaki",
+        "name": "Ninja 300",
+        "model": "Ninja 300 (BS6)",
+        "engine": "296cc, liquid-cooled, parallel-twin",
+        "torque": "26.1 Nm @ 10000 rpm",
+        "bhp": "39 PS @ 11000 rpm",
+        "colour": [
+            "Lime Green",
+            "Candy Lime Green",
+            "Metallic Moondust Grey"
+        ],
+        "price": "₹3.43–3.50 lakh (ex‑showroom)",
+        "mileage": "30 kmpl (claimed/owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Kawasaki-logo.jpg"
+    },
+    {
+        "brand": "Aprilia",
+        "name": "RS 457",
+        "model": "RS 457",
+        "engine": "457cc, liquid-cooled, parallel twin",
+        "torque": "43.5 Nm (approx, market data)",
+        "bhp": "47 bhp",
+        "colour": [
+            "Prismatic Dark",
+            "Racing Stripes (graphics)"
+        ],
+        "price": "₹4.10–4.25 lakh (ex‑showroom)",
+        "mileage": "—",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Aprilia_RS_457.jpg"
+    },
+    {
+        "brand": "Royal Enfield",
+        "name": "Bullet 350 (J-series)",
+        "model": "Bullet 350 (2023+)",
+        "engine": "349cc, air-oil cooled, single-cylinder",
+        "torque": "27 Nm @ 4000 rpm",
+        "bhp": "20.2 bhp @ 6100 rpm",
+        "colour": [
+            "Black Gold",
+            "Military Red",
+            "Military Black"
+        ],
+        "price": "₹1.73–2.16 lakh (ex‑showroom)",
+        "mileage": "35 kmpl (claimed/owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/6/68/Royal_Enfield%2C_Royal_Enfield_bullet_in_Red_colour%2C_bullet_152921.jpg"
+    },
+    {
+        "brand": "BMW Motorrad",
+        "name": "G 310 R",
+        "model": "G 310 R (BS6.2)",
+        "engine": "313cc, liquid-cooled, single-cylinder",
+        "torque": "28 Nm @ 7500 rpm",
+        "bhp": "34 PS @ 9250 rpm",
+        "colour": [
+            "Racing Red",
+            "Polar White",
+            "Style Sport"
+        ],
+        "price": "₹2.90–3.05 lakh (ex‑showroom)",
+        "mileage": "30–32 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "—",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/b/b6/BMW_logo_%28gray%29.svg"
+    },
+    {
+        "brand": "Suzuki",
+        "name": "V-Strom SX 250",
+        "model": "V-Strom SX",
+        "engine": "249cc, oil-cooled, single-cylinder",
+        "torque": "22.2 Nm @ 7300 rpm",
+        "bhp": "26.5 PS @ 9300 rpm",
+        "colour": [
+            "Champion Yellow No. 2",
+            "Pearl Blaze Orange",
+            "Glass Sparkle Black"
+        ],
+        "price": "₹2.15–2.20 lakh (ex‑showroom)",
+        "mileage": "35–38 kmpl (owner reported)",
+        "fuel_type": "Petrol",
+        "year": 2024,
+        "rating": "4.7/5 (BikeWale users, page snippet)",
+        "poster": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Suzuki_logo_2.jpg"
+    }
+]

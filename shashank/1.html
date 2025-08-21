@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+    .loginpage {
+      background-color: white;
+      width: 500px;
+      height: 500px;
+    }
+    .input-field {
+      border-radius: 15px;
+      width: 100%;
+      height: 50px;
+      margin: 10px;
+      border: solid;
+      border-color: white;
+    }
+  </style>
+  <body>
+    <script>
+      function createContainer() {
+        let container = document.createElement("div");
+        container.setAttribute("class", "container");
+        document.body.appendChild(container);
+        createLoginPage(container);
+      }
+      function createLoginPage(container) {
+        let newdiv = document.createElement("div");
+        newdiv.setAttribute("class", "loginpage");
+        let newinput1 = document.createElement("input");
+        newinput1.setAttribute("placeholder", "email");
+        newinput1.setAttribute("class", "input-field");
+        let newinput2 = document.createElement("input");
+        newinput2.setAttribute("placeholder", "password");
+        newinput2.setAttribute("class", "input-field");
+        let newbutton = document.createElement("button");
+        newbutton.setAttribute("class", "input-field");
+        newbutton.innerText = "login";
+        newdiv.appendChild(newinput1);
+        newdiv.appendChild(newinput2);
+        newdiv.appendChild(newbutton);
+        container.appendChild(newdiv);
+      }
+      createContainer();
+    </script>
+  </body>
+</html>

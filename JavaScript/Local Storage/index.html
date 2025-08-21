@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container" class="container">
+
+        <div id="login-card" class="card">
+            <p class="title">
+                Welcome back, <br> login to your account
+            </p>
+            <input class="form-field" type="email" placeholder="Enter email id" id="email">
+            <input class="form-field" type="password" placeholder="Enter password" id="password">
+            <button class="login-btn" onclick="login()">Login</button>
+            <button class="login-btn" onclick="get()">get Credentials</button>
+            <button class="login-btn" onclick="remove()">Remove Credentials</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

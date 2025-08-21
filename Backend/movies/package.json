@@ -1,0 +1,14 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "This is a normal backend project without database connection ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reify Labs",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

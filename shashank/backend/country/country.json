@@ -1,0 +1,142 @@
+[
+  {
+    "country_name": "United States",
+    "language": "English",
+    "stocks": ["NYSE", "NASDAQ"],
+    "president": "Joe Biden",
+    "states_in_country": ["California", "Texas", "Florida", "New York", "Illinois"]
+  },
+  {
+    "country_name": "India",
+    "language": "Hindi, English",
+    "stocks": ["BSE", "NSE"],
+    "president": "Droupadi Murmu",
+    "states_in_country": ["Maharashtra", "Tamil Nadu", "Uttar Pradesh", "Karnataka", "Punjab"]
+  },
+  {
+    "country_name": "China",
+    "language": "Mandarin",
+    "stocks": ["Shanghai Stock Exchange", "Shenzhen Stock Exchange"],
+    "president": "Xi Jinping",
+    "states_in_country": ["Guangdong", "Sichuan", "Hebei", "Zhejiang", "Shandong"]
+  },
+  {
+    "country_name": "Japan",
+    "language": "Japanese",
+    "stocks": ["Tokyo Stock Exchange", "Osaka Exchange"],
+    "president": "Fumio Kishida",
+    "states_in_country": ["Tokyo", "Osaka", "Hokkaido", "Kyoto", "Okinawa"]
+  },
+  {
+    "country_name": "Germany",
+    "language": "German",
+    "stocks": ["Frankfurt Stock Exchange", "Xetra"],
+    "president": "Frank-Walter Steinmeier",
+    "states_in_country": ["Bavaria", "Berlin", "Hesse", "Saxony", "Hamburg"]
+  },
+  {
+    "country_name": "Brazil",
+    "language": "Portuguese",
+    "stocks": ["B3 - Brasil Bolsa Balcão"],
+    "president": "Luiz Inácio Lula da Silva",
+    "states_in_country": ["São Paulo", "Rio de Janeiro", "Bahia", "Minas Gerais", "Paraná"]
+  },
+  {
+    "country_name": "Russia",
+    "language": "Russian",
+    "stocks": ["Moscow Exchange"],
+    "president": "Vladimir Putin",
+    "states_in_country": ["Moscow", "Saint Petersburg", "Krasnodar", "Tatarstan", "Siberia"]
+  },
+  {
+    "country_name": "Canada",
+    "language": "English, French",
+    "stocks": ["Toronto Stock Exchange", "TSX Venture Exchange"],
+    "president": "Mary Simon",
+    "states_in_country": ["Ontario", "Quebec", "British Columbia", "Alberta", "Manitoba"]
+  },
+  {
+    "country_name": "Australia",
+    "language": "English",
+    "stocks": ["Australian Securities Exchange"],
+    "president": "David Hurley",
+    "states_in_country": ["New South Wales", "Victoria", "Queensland", "Western Australia", "Tasmania"]
+  },
+  {
+    "country_name": "United Kingdom",
+    "language": "English",
+    "stocks": ["London Stock Exchange"],
+    "president": "King Charles III (Monarch), Rishi Sunak (Prime Minister)",
+    "states_in_country": ["England", "Scotland", "Wales", "Northern Ireland"]
+  },
+  {
+    "country_name": "France",
+    "language": "French",
+    "stocks": ["Euronext Paris"],
+    "president": "Emmanuel Macron",
+    "states_in_country": ["Île-de-France", "Provence-Alpes-Côte d'Azur", "Brittany", "Normandy", "Occitanie"]
+  },
+  {
+    "country_name": "Italy",
+    "language": "Italian",
+    "stocks": ["Borsa Italiana"],
+    "president": "Sergio Mattarella",
+    "states_in_country": ["Lombardy", "Sicily", "Veneto", "Tuscany", "Piedmont"]
+  },
+  {
+    "country_name": "Mexico",
+    "language": "Spanish",
+    "stocks": ["Bolsa Mexicana de Valores"],
+    "president": "Claudia Sheinbaum",
+    "states_in_country": ["Jalisco", "Nuevo León", "Puebla", "Yucatán", "Chihuahua"]
+  },
+  {
+    "country_name": "South Africa",
+    "language": "Zulu, Xhosa, Afrikaans, English, and others",
+    "stocks": ["Johannesburg Stock Exchange"],
+    "president": "Cyril Ramaphosa",
+    "states_in_country": ["Gauteng", "KwaZulu-Natal", "Western Cape", "Eastern Cape", "Limpopo"]
+  },
+  {
+    "country_name": "Saudi Arabia",
+    "language": "Arabic",
+    "stocks": ["Tadawul"],
+    "president": "Salman bin Abdulaziz Al Saud (King)",
+    "states_in_country": ["Riyadh", "Makkah", "Madinah", "Eastern Province", "Asir"]
+  },
+  {
+    "country_name": "South Korea",
+    "language": "Korean",
+    "stocks": ["Korea Exchange (KRX)"],
+    "president": "Yoon Suk-yeol",
+    "states_in_country": ["Seoul", "Busan", "Incheon", "Daegu", "Gyeonggi"]
+  },
+  {
+    "country_name": "Singapore",
+    "language": "English, Malay, Mandarin, Tamil",
+    "stocks": ["Singapore Exchange"],
+    "president": "Tharman Shanmugaratnam",
+    "states_in_country": ["Central Region", "North-East Region", "North Region", "East Region", "West Region"]
+  },
+  {
+    "country_name": "Argentina",
+    "language": "Spanish",
+    "stocks": ["Buenos Aires Stock Exchange"],
+    "president": "Javier Milei",
+    "states_in_country": ["Buenos Aires", "Córdoba", "Santa Fe", "Mendoza", "Tucumán"]
+  },
+  {
+    "country_name": "Turkey",
+    "language": "Turkish",
+    "stocks": ["Borsa İstanbul"],
+    "president": "Recep Tayyip Erdoğan",
+    "states_in_country": ["Istanbul", "Ankara", "Izmir", "Bursa", "Antalya"]
+  },
+  {
+    "country_name": "Indonesia",
+    "language": "Indonesian",
+    "stocks": ["Indonesia Stock Exchange"],
+    "president": "Prabowo Subianto",
+    "states_in_country": ["Jakarta", "Bali", "Java", "Sumatra", "Sulawesi"]
+  }
+]
