@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page with Functions</title>
+</head>
+
+<body>
+  <script>
+    // Function to create and return an input field
+    function createInput(type, placeholder, id) {
+      let input = document.createElement("input");
+      input.type = type;
+      input.placeholder = placeholder;
+      input.id = id;
+      return input;
+    }
+
+    // Function to create and return a button
+    function createButton(text, onClickFunction) {
+      let button = document.createElement("button");
+      button.innerText = text;
+      button.onclick = onClickFunction;
+      return button;
+    }
+
+    // Function to create message display
+    function createMessage() {
+      let message = document.createElement("p");
+      message.id = "message";
+      return message;
+    }
+
+    // Function to check login details
+    function checkLogin() {
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+      let message = document.getElementById("message");
+
+      if (username === "admin" && password === "1234") {
+        message.innerText = "✅ Login Successful";
+        message.style.color = "green";
+      } else {
+        message.innerText = "❌ Invalid username or password";
+        message.style.color = "red";
+      }
+    }
+
+    // Build the page using functions
+    function buildLoginPage() {
+      // Heading
+      let heading = document.createElement("h2");
+      heading.innerText = "Login Page";
+      document.body.appendChild(heading);
+
+      // Username field
+      document.body.appendChild(createInput("text", "Username", "username"));
+      document.body.appendChild(document.createElement("br"));
+
+      // Password field
+      document.body.appendChild(createInput("password", "Password", "password"));
+      document.body.appendChild(document.createElement("br"));
+
+      // Login Button
+      document.body.appendChild(createButton("Login", checkLogin));
+
+      // Message
+      document.body.appendChild(createMessage());
+    }
+
+    // Call the function to build the login page
+    buildLoginPage();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 400px;
+            height: 550px;
+            background-color: blueviolet;
+            padding-top: 20px;
+            margin-top: 20px;
+            padding-left: 30px;
+            border-radius: 20px;
+
+        }
+
+        .name,
+        .email,
+        .pass,
+        .number {
+
+            width: 350px;
+            height: 30px;
+            background-color: white;
+            color: black;
+            font-family: 'poppins' 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            border-radius: 16px;
+            padding-left: 10px;
+        }
+
+        .select {
+
+            font-size: 18px;
+            padding-top: 10px;
+
+        }
+
+        .label {
+            font-size: 18px;
+            padding-top: 70px;
+            padding-bottom: 20px;
+        }
+
+        .head {
+            margin: 0;
+            color: white;
+        }
+
+        .number {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            width: 200px;
+            height: 45px;
+            background-color: blue;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            position: relative;
+            left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form" onsubmit="return false">
+        <div class="card">
+            <h1 class="head">Welcome to the Future of Riding</h1>
+            <label class="label" for="text">Customer name</label>
+            <input class="name" id="name" type="text" placeholder="enter your name"><br />
+            <label class="label" for="email">Customer mail</label>
+            <input class="email" id="email" type="email" placeholder="enter your email"><br />
+            <label class="label" for="password">Customer password</label>
+            <input class="pass" id="password" type="password" placeholder="enter your password"><br /><br />
+            <label class="label" for="radio"><b>select vehicle</b> </label>
+            <div class="select">
+                <label><input type="radio" id="radio" name="vehicle" value="bmw"> bmw</label>
+
+                <label><input type="radio" id="radio" name="vehicle" value="duke">Duke </label><br>
+
+            </div>
+            <label class="label" for="number">number</label><br />
+            <input class="number" id="number" type="number" placeholder="enter your phone number"><br />
+            <button class="btn" onclick="login()">Login Here</button><br />
+            <button class="btn" onclick="getdata()">get </button><br />
+            <button class="btn" onclick="removedata()">remove </button>
+        </div>
+    </form>
+    <script src="formpage.js">
+
+    </script>
+</body>
+
+</html>
