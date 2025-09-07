@@ -1,25 +1,30 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
+
+app.use(cors({
+    origin: '*'
+}))
 
 app.use(express.json());
 
 const PORT = 3000;
 
-const movies = [];
+let movies = [];
 
 // Get All Movies API
 app.get('/v1/api/get-movies', (req, res) => {
     res.status(200).json({
         message: movies.length > 0 ? 'Movies fetched.' : 'No Movies Found.',
-        movies: movies,
+        movies,
         count: movies.length
     })
 });
 
 // Get Movie By ID
 app.get('/v1/api/get-movie/:id', (req, res) => {
-    const idToFind = req.params.id;
-    const movieToSend = movies.filter(m => m.id == idToFind)[0];
+    const { id } = req.params;
+    const movieToSend = movies.filter(m => m.id == id)[0];
     res.status(200).json({
         message: movieToSend === undefined || movieToSend === null ? 'No Movie Found.' : 'Movie fetched.',
         movie: movieToSend === undefined || movieToSend === null ? {} : movieToSend
@@ -28,16 +33,30 @@ app.get('/v1/api/get-movie/:id', (req, res) => {
 
 // Search Movie by name, cast, genre, language, year
 app.post('/v1/api/search-movies', (req, res) => {
-    const searchFields = req.body;
-    let filteredMovies = movies.map(m => m);
-    if (searchFields.name) {
-        filteredMovies = filteredMovies.filter(m => m.name.toLowerCase().includes(searchFields.name.toLowerCase()));
+    const { name, cast, genre, year } = req.body;
+    let filteredMovies = [...movies];
+
+    if (name) {
+        filteredMovies = filteredMovies.filter(m => m.name.toLowerCase().includes(name.toLowerCase()));
     }
-    if (searchFields.year) {
-        filteredMovies = filteredMovies.filter(m => m.release_year >= searchFields.year)
+    if (year) {
+        filteredMovies = filteredMovies.filter(m => m.release_year >= year)
     }
-    if (searchFields.genre) {
-        filteredMovies = filteredMovies.filter(m => m.genre.toLowerCase().includes(searchFields.genre.toLowerCase()));
+    if (genre) {
+        filteredMovies = filteredMovies.filter(m => m.genre.toLowerCase().includes(genre.toLowerCase()));
+    }
+    if (cast) {
+        const moviesToFilterByCast = []
+
+        filteredMovies.forEach(m => {
+            m.cast.forEach(c => {
+                if (c.name.toLowerCase().includes(cast.toLowerCase())) {
+                    moviesToFilterByCast.push(m)
+                }
+            })
+        })
+
+        filteredMovies = moviesToFilterByCast.map(m => m)
     }
     res.status(200).json({
         message: filteredMovies.length > 0 ? 'Movies fetched.' : 'No Movies Found.',
@@ -54,7 +73,7 @@ app.post('/v1/api/add-movie', (req, res) => {
     res.status(201).json({
         message: 'Movie Added.',
         movie: movieToAdd
-    })
+    });
 });
 
 // Add Movies API - Bulk Upload
@@ -102,6 +121,21 @@ app.post('/v1/api/delete-movies', (req, res) => {
     res.status(200).json({
         message: 'Movies Deleted.',
         movies: []
+    })
+});
+
+// Reset Movies API
+app.post('/v1/api/reset-movies', (req, res) => {
+    const moviesToAdd = req.body;
+    movies = [];
+    for (const movie of moviesToAdd) {
+        movie.id = movies.length + 1;
+        movies.push(movie);
+    }
+    res.status(201).json({
+        message: 'Movies Resetted.',
+        movies: movies,
+        count: movies.length
     })
 });
 

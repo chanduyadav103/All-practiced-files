@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Recap</title>
+</head>
+
+<body>
+
+    <!-- Heading Tags - h1, h2, h3, h4, h5, h6 -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraph - p -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta ullam dolorem saepe, laudantium corporis
+        iste aliquid qui at. Ex repudiandae, magnam tempore non nisi voluptas amet aperiam ipsum odit nihil
+        perspiciatis. Dolorum, iusto. Dolorum, quasi minima asperiores maiores possimus ea quibusdam voluptate vel nemo
+        ut vitae consectetur sed iure neque delectus! Nam eum quasi cumque beatae nihil fugit dignissimos sed facere
+        consequuntur id nesciunt iusto voluptate natus ducimus reiciendis, aut incidunt placeat vero. Eum quam libero
+        perspiciatis, aliquam blanditiis dolores accusantium voluptatem aspernatur quaerat! Qui, sed ab praesentium nam
+        quidem vitae doloribus ipsum. Quis deserunt voluptate nisi! Ipsam doloremque aliquid inventore debitis
+        consequatur consectetur voluptate accusantium error adipisci blanditiis dicta saepe enim asperiores, laudantium
+        cupiditate nobis vero. Quisquam vitae sed qui fugit unde corrupti illum, nam sunt alias, sint pariatur?
+        Cupiditate quam voluptatem expedita accusamus necessitatibus, harum explicabo voluptatibus asperiores vero
+        molestias minus ipsum non libero corrupti minima suscipit?
+    </p>
+
+    <!-- Style Tags -->
+
+    <p>
+        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Totam quae dicta velit amet autem
+        cumque fuga
+        deserunt
+        voluptate! Architecto, qui cum debitis id hic sit assumenda corporis pariatur in reprehenderit amet? Officia,
+        odit voluptas, possimus doloribus nulla earum, tenetur reiciendis nam facilis voluptatum soluta corrupti?
+        <u>Officiis</u> repudiandae veniam, minus architecto sunt quos ex est, vero nobis dolorem, expedita
+        necessitatibus
+        perspiciatis commodi. Velit totam, repellendus assumenda impedit, sed magnam corporis adipisci provident eum
+        architecto placeat magni eveniet quod quos cum illo sit, aperiam consequuntur alias sunt nostrum ipsum?
+        Reprehenderit, magni laborum vero, vel, earum consequatur praesentium repellendus repellat <i>dolor</i> suscipit
+        molestias.
+    </p>
+
+    <!-- Layout Tags -->
+    <div>
+        <h3>Lorem ipsum:</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, itaque.
+        </p>
+    </div>
+    <section>
+        <h3>Lorem ipsum:</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, itaque.
+        </p>
+    </section>
+    <aside>
+        Hello
+    </aside>
+    <header>
+        Hello this is a header
+        <nav>
+            <a href="https://youtube.com" target="_blank">Open YouTube</a>
+        </nav>
+    </header>
+    <footer>
+        Developed by Reify Labs
+    </footer>
+    <main>
+        <h1>Main Content</h1>
+        <p>Hello</p>
+    </main>
+
+    <!-- Interaction Tags -->
+    <form action="#">
+        <div><label for="username">User name</label>
+            <input id="username" type="text" placeholder="Enter username" autocomplete="off"
+                onchange="changeEvent(event)">
+        </div>
+
+        <div><label for="password">password</label>
+            <input id="password" type="password" placeholder="Enter password">
+        </div>
+
+        <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input id="confirm-password" type="password" placeholder="Enter password" onfocus="focusEvent(event)">
+        </div>
+
+        <div>
+            <label for="email">email</label>
+            <input id="email" type="email" placeholder="Enter email" autocomplete="email" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Enter Phone number">
+        </div>
+
+        <div>
+            <input id="terms" type="checkbox" required>
+            <label for="terms">Terms & Conditions</label>
+        </div>
+
+        <div>
+            <input id="male" type="radio" required>
+            <label for="male">Male</label>
+
+            <input id="female" type="radio" required>
+            <label for="female">female</label>
+        </div>
+
+        <div>
+            <label for="group">Blood Group</label>
+            <select id="group">
+                <option value="a+">A+</option>
+                <option value="a-">A-</option>
+                <option value="b+">B+</option>
+                <option value="b-">B-</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div id="box" style="width: 100px; height: 100px; background-color: crimson; margin: 32px;"
+        onmouseleave="onBoxLeave(event)" onmouseover="onBoxEnter(event)">
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
