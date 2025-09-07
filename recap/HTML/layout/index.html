@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        header,
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 32px;
+            background-color: #11223356;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+        }
+
+        footer {
+            position: static;
+            background-color: #112233;
+        }
+
+        header>nav>ul,
+        footer>nav>ul {
+            display: flex;
+            gap: 10px;
+            list-style-type: none;
+        }
+
+        header>nav>ul>li>a,
+        footer>nav>ul>li>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer>h2 {
+            color: white;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        main p {
+            margin: 0;
+            margin-bottom: 16px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        main button {
+            background-color: #112233;
+            color: #fff;
+            padding: 10px 48px;
+            border: 2px solid #fff;
+        }
+
+        section {
+            width: 100%;
+            height: 100%;
+            padding: 32px 100px;
+            box-sizing: border-box;
+        }
+
+        section:nth-child(even) {
+            background-color: crimson;
+        }
+
+        section:nth-child(even)>h2 {
+            color: #fff;
+            text-transform: uppercase;
+            margin: 48px 0 24px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+        <h2 style="margin: 0;">Welcome</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about-us">About Us</a>
+                </li>
+                <li>
+                    <a href="">Products</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                </li>
+                <li>
+                    <a href="">Careers</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <p>Hey, This is chandu. Alias Zara brand ambassdor</p>
+            <button>Hire me</button>
+        </div>
+    </main>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+    </section>
+
+    <section id="careers">
+        <h2>Careers</h2>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+    </section>
+
+    <footer>
+        <h2 style="margin: 0;">Bye Bye</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about-us">About Us</a>
+                </li>
+                <li>
+                    <a href="">Products</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                </li>
+                <li>
+                    <a href="">Careers</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
