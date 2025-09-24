@@ -1,0 +1,104 @@
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.text {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.nav-item:hover {
+
+    transform: scale(1.2);
+}
+
+
+#todos {
+    margin: 10px;
+    width: 70%;
+    margin-left: 40px;
+}
+
+
+
+.todo {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+
+    transition: transform 0.2s ease;
+}
+
+.todo:hover {
+    transform: scale(1.06);
+
+
+}
+
+
+
+.todo-actions {
+    display: flex;
+    gap: 25px;
+
+}
+
+.todo>h5 {
+
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.todo>p {
+
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-2 {
+    width: 145px;
+    border-radius: 15px;
+    background-color: rgb(209, 67, 16);
+    color: black;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+.btn-3 {
+    width: 145px;
+    border-radius: 15px;
+    background-color: #d41629;
+    color: black;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+#list>p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.todo.completed {
+    background-color: #d4edda;
+
+    width: 100%;
+    transition: 0.3s ease;
+}

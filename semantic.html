@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Transforming</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(166, 147, 184);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 450px;
+            height: 80%;
+            background-color: rgb(240, 237, 237);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        legend {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card {
+            margin-left: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        select {
+            width: 100%;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        button {
+            width: 250px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        fieldset {
+            color: black;
+            border: 1px solid #7a7a7a;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Select Apartment Type</legend>
+                <label><input type="radio" name="apartment" value="2BHK">
+                    2BHK</label>
+                <label><input type="radio" name="apartment" value="3BHK">
+                    3BHK</label>
+            </fieldset>
+
+            <fieldset class="home">
+                <legend>Select Available Spaces</legend>
+                <label> kitchen</label>
+                <input type="checkbox" name="spaces" value="kitchen">
+                <label> hall</label>
+                <input type="checkbox" name="spaces" value="hall">
+                <label> dining</label>
+                <input type="checkbox" name="spaces" value="dining">
+                <label> balcony</label><br>
+                <input type="checkbox" name="spaces" value="balcony">
+
+                <input type="range" name="budget" min="100" max="10000" value="1000">cost<br>
+
+                <label for="bio">Bio</label><br>
+                <textarea name="bio" rows="3" placeholder="Enter your details here..."></textarea><br>
+
+            </fieldset>
+
+        </form>
+        <form class="card">
+            <label for="design">Select Home Design</label><br>
+            <select name="design" id="design">
+                <optgroup label="Home Designs">
+                    <option value="kitchen interiors">Kitchen Interiors</option>
+                    <option value="hall interiors">Hall Interiors</option>
+                    <option value="balcony interiors">Balcony Interiors</option>
+                </optgroup>
+            </select>
+            </fieldset>
+
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

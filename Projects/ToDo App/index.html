@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- 
+    1. Title
+    2. Description
+    3. Submit
+    4. Delete ToDo
+    5. Update ToDo
+    6. Local Storage
+    7. UI
+    -->
+
+    <div class="container">
+        <div class="left-section">
+
+            <h1 class="app-heading">Welcome to ToDo App</h1>
+            <h3 class="app-sub-heading">Never forget and miss anything</h3>
+
+            <form>
+
+                <div class="form-field">
+                    <label class="form-label">Title</label>
+                    <input type="text" id="title" class="form-input" placeholder="Enter ToDo Title">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label">Description</label>
+                    <textarea rows="10" id="description" class="form-textarea"
+                        placeholder="Enter ToDo Description"></textarea>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="setToDo()">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+            </form>
+
+        </div>
+        <div class="right-section">
+            <div id="todos" class="todos">
+                <!-- ToDos comes here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

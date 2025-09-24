@@ -1,0 +1,60 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.box {
+    width: 750px;
+    height: 180px;
+
+
+
+}
+
+.box1 {
+
+    height: 250px;
+
+
+
+}
+
+
+
+.card {
+
+    border-radius: 20px;
+    border: none;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.one {
+    font-size: 10px;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.sales {
+    background-color: rgb(243, 147, 147);
+}
+
+.order {
+    background-color: rgb(239, 239, 161);
+}
+
+.sold {
+    background-color: lightgreen;
+}
+
+.new {
+    background-color: rgb(244, 166, 244);
+}

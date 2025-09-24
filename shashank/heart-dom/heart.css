@@ -1,0 +1,12 @@
+.container {
+  background-image: url(../images/—Pngtree—download\ pictures\ of\ a\ human_21140656.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 700px;
+  height: 700px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

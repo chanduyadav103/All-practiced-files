@@ -1,0 +1,129 @@
+.container {
+    background-color: #222;
+}
+
+.class-name {}
+
+#heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: rebeccapurple
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+* {
+    font-size: 14px;
+}
+
+.form-field {
+    margin: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 150px;
+}
+
+.form-field .form-label {
+    font-weight: bold;
+    color: blue;
+}
+
+.form-field>.form-label {
+    margin-bottom: 4px;
+    color: green !important;
+}
+
+.form-field>.form-input {
+    border: 1px solid #aeaeae;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+}
+
+.form-input {
+    border: 1px solid red;
+    border-radius: 0px;
+}
+
+/* Values: */
+/* 
+px - pixel
+cm - centimeter
+pt - point
+% - percentage
+em - element
+rem - root element
+vw - viewport width
+vh - viewpoert height
+
+*/
+
+.box {
+    width: 100pt;
+    height: 100px;
+    background-color: crimson;
+}
+
+.para>p {
+    font-size: 20px;
+}
+
+.para>p>span {
+    font-size: 5rem;
+}
+
+.d-none {
+    display: none;
+}
+
+
+/* ------------------------- */
+.container {
+    background-color: #aedbff;
+    width: 100vw;
+    height: 100vh;
+}
+
+header>nav>ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 32px;
+    background-color: #222;
+}
+
+footer>nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 32px;
+    background-color: #222;
+}
+
+header>nav>ul>li>a,
+footer>nav>ul>li>a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 32px;
+    height: 5vh;
+    /* background-color: red; */
+}
+
+main>p {
+    font-weight: 16px;
+    text-align: justify;
+}

@@ -1,0 +1,385 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(59, 48, 70);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+h1 {
+    margin-left: 20px;
+    color: rgb(229, 214, 186);
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+a {
+
+    color: rgb(229, 214, 186);
+    font-weight: 60px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+a :hover {
+    color: white;
+}
+
+
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(59, 48, 70);
+    color: rgb(229, 214, 186);
+    border: none;
+    border-radius: 20px;
+}
+
+
+h2 {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(59, 48, 70);
+}
+
+h3 {
+    margin: 0;
+    font-size: 50px;
+    color: rgba(47, 0, 255, 0.712);
+
+}
+
+p {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.mission h3 {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(52, 40, 65);
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    color: rgb(59, 48, 70);
+}
+
+.main {
+
+    color: rgb(229, 214, 186);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: inline;
+    color: rgb(245, 244, 247);
+
+}
+
+footer h2 {
+
+    color: rgb(59, 48, 70);
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    color: rgb(59, 48, 70);
+}
+
+
+
+
+.about,
+.home,
+.projects,
+.our-services {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactus {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.projects p {
+    font-size: 40px;
+    color: blueviolet;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.our-services {
+    background-color: rgb(202, 186, 156);
+}
+
+.projects {
+    background-color: rgb(59, 48, 70);
+}
+
+.contactus {
+    background-color: rgb(202, 186, 156);
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 48, 70);
+}
+
+.form {
+    width: 450px;
+    height: 450px;
+    background-color: rgb(229, 214, 186);
+    border-radius: 20px;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.here {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+label {
+
+    font-size: 18px;
+}
+
+article p {
+    font-size: 20px;
+
+}
+
+article {
+    width: 80%;
+    height: 300px;
+    border-radius: 70px 0 70px;
+    background-color: #454547b6;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+input {
+    width: 400px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(59, 48, 70);
+    border: 2px solid rgb(58, 10, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.card2 {
+    width: 370px;
+    padding: 5px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.img:hover {
+    border-radius: 20px;
+    transform: scale3d(1.4, 1.4, 1.4);
+
+}
+
+.worked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+span {
+    color: brown;
+    display: flex;
+    justify-content: flex-end;
+}
+
+figure {
+    height: 350px;
+    background-color: #22042bb6;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+img {
+    padding: 0 10px;
+    border-radius: 50%;
+}
+
+.img {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.captured {
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.captured h1 {
+    color: rgba(50, 7, 63, 0.856);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.captured p {
+    color: rgba(50, 7, 63, 0.856);
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: rgb(59, 48, 70);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video:hover {
+    position: static;
+    border-radius: 20px;
+    transform: scale3d(1.4, 1.4, 1.4);
+}
+
+aside {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(59, 48, 70);
+    border-radius: 10px;
+}
+
+
+.contact h3 {
+    padding-top: 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact li {
+    margin: 30px;
+    color: white;
+}
+
+strong {
+    font-size: 20px;
+}
+
+.follow {
+    width: 70%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    border-radius: 0 30px 30px 0;
+}
+
+.follow h3 {
+    margin-top: 20px;
+    font-size: 60px;
+    color: rgb(59, 48, 70);
+}
+
+
+button {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    background-color: black;
+}

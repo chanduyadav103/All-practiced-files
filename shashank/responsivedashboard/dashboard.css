@@ -1,0 +1,60 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+* {
+  box-sizing: border-box;
+}
+.nav,
+.main-nav {
+  height: 50px;
+}
+.btn {
+  height: 34px;
+  background-color: skyblue;
+}
+a {
+  color: lightgray;
+  text-decoration: none;
+  padding: 5px;
+}
+.round {
+  width: 30px;
+  height: 30px;
+  background-color: skyblue;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.customer,
+.order,
+.revenues,
+.growth {
+  height: 200px;
+  border: solid 1px lightgray;
+}
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.production {
+  height: 400px;
+}
+.revenue {
+  height: 300px;
+}
+.location {
+  height: 300px;
+}
+.seliing-product {
+  height: 270px;
+}
+.sales {
+  height: 270px;
+}
+.activity {
+  height: 270px;
+}

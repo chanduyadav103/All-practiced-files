@@ -1,0 +1,146 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+header {
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 1) 0%,
+    hsla(190, 75%, 92%, 1) 14%,
+    hsla(190, 75%, 92%, 1) 82%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 1) 0%,
+    hsla(190, 75%, 92%, 1) 14%,
+    hsla(190, 75%, 92%, 1) 82%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 1) 0%,
+    hsla(190, 75%, 92%, 1) 14%,
+    hsla(190, 75%, 92%, 1) 82%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#DCF5FA", GradientType=1 );
+}
+.para {
+  color: rgba(17, 142, 187, 0.897);
+}
+.response {
+  color: rgb(2, 188, 255);
+}
+.card-box {
+  height: 350px;
+  margin-left: 20px;
+}
+.card-1 {
+  background: hsla(217, 100%, 50%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+  color: white;
+  font-weight: bold;
+}
+.card-2 {
+  background: hsla(29, 92%, 70%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(29, 92%, 70%, 1) 0%,
+    hsla(0, 87%, 73%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(29, 92%, 70%, 1) 0%,
+    hsla(0, 87%, 73%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(29, 92%, 70%, 1) 0%,
+    hsla(0, 87%, 73%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9B16E", endColorstr="#F68080", GradientType=1 );
+  color: white;
+  font-weight: bold;
+}
+.card-3 {
+  background: hsla(221, 45%, 73%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(220, 78%, 29%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(220, 78%, 29%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(220, 78%, 29%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+  color: white;
+  font-weight: bold;
+}
+.card-4 {
+  background: hsla(279, 83%, 70%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(279, 83%, 70%, 1) 0%,
+    hsla(321, 90%, 70%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(279, 83%, 70%, 1) 0%,
+    hsla(321, 90%, 70%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(279, 83%, 70%, 1) 0%,
+    hsla(321, 90%, 70%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C471F2", endColorstr="#F76CC6", GradientType=1 );
+  color: white;
+  font-weight: bold;
+}

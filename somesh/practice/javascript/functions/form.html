@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <script>
+        let containertag, cardtag, ptag, nametag, cctag, modeltag, colortag, mileagetag, speedtag, pricetag, btntag, gettag, removetag;
+
+        function createContainer() {
+            containertag = document.createElement('div');
+            containertag.setAttribute('class', 'container');
+            document.body.appendChild(containertag);
+        }
+        createContainer();
+
+        function createCard() {
+            cardtag = document.createElement('div');
+            cardtag.setAttribute('id', 'logincard');
+            cardtag.setAttribute('class', 'card');
+            containertag.appendChild(cardtag);
+        }
+        createCard();
+        function createtitle() {
+            const ptag = document.createElement('p');
+            ptag.setAttribute('class', 'p')
+            ptag.innerText = 'Bike details'
+            cardtag.appendChild(ptag);
+
+        }
+        createtitle();
+        function createname() {
+            nametag = document.createElement('input');
+            nametag.setAttribute('class', 'input');
+            nametag.setAttribute('type', 'text');
+            nametag.setAttribute('placeholder', 'Name')
+            cardtag.appendChild(nametag)
+        }
+        createname();
+        function createcc() {
+            cctag = document.createElement('input');
+            cctag.setAttribute('class', 'input');
+            cctag.setAttribute('type', 'text');
+            cctag.setAttribute('placeholder', 'cc')
+            cardtag.appendChild(cctag)
+        }
+        createcc();
+        function createmodel() {
+            modeltag = document.createElement('input');
+            modeltag.setAttribute('class', 'input');
+            modeltag.setAttribute('type', 'text');
+            modeltag.setAttribute('placeholder', 'model')
+            cardtag.appendChild(modeltag)
+        }
+        createmodel();
+        function createcolor() {
+            colortag = document.createElement('input');
+            colortag.setAttribute('class', 'input');
+            colortag.setAttribute('type', 'text');
+            colortag.setAttribute('placeholder', 'color')
+            cardtag.appendChild(colortag)
+        }
+        createcolor();
+        function createmileage() {
+            mileagetag = document.createElement('input');
+            mileagetag.setAttribute('class', 'input');
+            mileagetag.setAttribute('type', 'text');
+            mileagetag.setAttribute('placeholder', 'mileage')
+            cardtag.appendChild(mileagetag)
+        }
+        createmileage();
+        function createtopspeed() {
+            speedtag = document.createElement('input');
+            speedtag.setAttribute('class', 'input');
+            speedtag.setAttribute('type', 'text');
+            speedtag.setAttribute('placeholder', 'top speed')
+            cardtag.appendChild(speedtag)
+        }
+        createtopspeed();
+        function createprice() {
+            pricetag = document.createElement('input');
+            pricetag.setAttribute('class', 'input');
+            pricetag.setAttribute('type', 'text');
+            pricetag.setAttribute('placeholder', 'price')
+            cardtag.appendChild(pricetag)
+        }
+        createprice();
+        function createbtn() {
+            btntag = document.createElement('button');
+            btntag.setAttribute('class', 'btn');
+            btntag.innerText = 'Submit'
+            cardtag.appendChild(btntag);
+            btntag.onclick = function () {
+                localStorage.setItem('bike_name', nametag.value);
+                localStorage.setItem('bike_name', nametag.value);
+                localStorage.setItem('bike_cc', cctag.value);
+                localStorage.setItem('bike_model', modeltag.value);
+                localStorage.setItem('bike_color', colortag.value);
+                localStorage.setItem('bike_mileage', mileagetag.value);
+                localStorage.setItem('bike_speed', speedtag.value);
+                localStorage.setItem('bike_price', pricetag.value);
+            }
+
+        }
+        createbtn();
+        function createget() {
+            gettag = document.createElement('button');
+            gettag.setAttribute('class', 'btn');
+            gettag.innerText = 'Get'
+            cardtag.appendChild(gettag);
+            gettag.onclick = function () {
+                console.log(localStorage.getItem('bike_name'));
+                console.log(localStorage.getItem('bike_cc'));
+                console.log(localStorage.getItem('bike_model'));
+                console.log(localStorage.getItem('bike_color'));
+                console.log(localStorage.getItem('bike_mileage'));
+                console.log(localStorage.getItem('bike_speed'));
+                console.log(localStorage.getItem('bike_price'));
+            }
+        }
+        createget();
+        function createremove() {
+            removetag = document.createElement('button');
+            removetag.setAttribute('class', 'btn');
+            removetag.innerText = 'remove'
+            cardtag.appendChild(removetag);
+            removetag.onclick = function () {
+                localStorage.removeItem('bike_name');
+                localStorage.removeItem('bike_cc');
+                localStorage.removeItem('bike_model');
+                localStorage.removeItem('bike_color');
+                localStorage.removeItem('bike_mileage');
+                localStorage.removeItem('bike_speed');
+                localStorage.removeItem('bike_price');
+                localStorage.clear();
+            }
+        }
+        createremove();
+
+    </script>
+</body>
+
+</html>

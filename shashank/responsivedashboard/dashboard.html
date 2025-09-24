@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+  <body>
+    <div class="container-fluid w-100 h-100 p-0 m-0">
+      <div class="row w-100 h-100 m-0 p-0">
+        <!-- aside -->
+        <div
+          class="d-none d-lg-block d-md-block col-md-2 col-lg-2 bg-dark h-100"
+        ></div>
+
+        <!-- main  -->
+        <div
+          class="col-sm-12 col-md-10 col-lg-10 h-100 m-0 p-0 bg-body-secondary"
+        >
+          <div class="row m-0 p-0">
+            <!-- nav bar -->
+            <div class="col-sm-12 col-md-12 main-nav">
+              <div
+                class="nav d-flex justify-content-between align-items-center"
+              >
+                <!-- left side nav -->
+                <div class="left-nav d-flex">
+                  <div>
+                    <input
+                      type="search"
+                      placeholder="Search..."
+                      class="rounded-0 border p-1"
+                    />
+                  </div>
+                  <div><button class="rounded-0 btn">Search</button></div>
+                </div>
+
+                <!-- right side nav -->
+                <div class="right-nav d-flex">
+                  <div><a href="">notification</a></div>
+                  <div><a href="">Widget</a></div>
+                  <div><a href="">Settings</a></div>
+                  <div><a href="">Brigthness</a></div>
+                  <div><a href="">Screen-size</a></div>
+                  <div class="d-flex gap-2 text-secondary">
+                    <div>
+                      <div class="round"></div>
+                    </div>
+                    <div><p>Profile Name</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- container  -->
+            <div class="row m-0 p-2 text-secondary-emphasis">
+              <div class="col-sm-12 col-md-6">
+                <div class="row">
+                  <!-- first card -->
+                  <div class="col-sm-12 col-md-6">
+                    <div
+                      class="d-flex flex-column justify-content-between customer p-2 bg-white mb-3"
+                    >
+                      <div class="d-flex ju justify-content-between">
+                        <div>
+                          <p>Customers</p>
+                          <p>36,254</p>
+                        </div>
+                        <div>
+                          <div class="card circle"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="m-0"><span>^ 5.27%</span> Since last month</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second card -->
+                  <div class="col-sm-12 col-md-6">
+                    <div
+                      class="d-flex flex-column justify-content-between order p-2 bg-white mb-3"
+                    >
+                      <div class="d-flex ju justify-content-between">
+                        <div>
+                          <p>Orders</p>
+                          <p>5,543</p>
+                        </div>
+                        <div>
+                          <div class="card circle"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="m-0"><span>^ 1.07%</span> Since last month</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- third card -->
+                  <div class="col-sm-12 col-md-6">
+                    <div
+                      class="d-flex flex-column justify-content-between revenues p-2 bg-white mb-3"
+                    >
+                      <div class="d-flex ju justify-content-between">
+                        <div>
+                          <p>revenues</p>
+                          <p>$6,254</p>
+                        </div>
+                        <div>
+                          <div class="card circle"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="m-0"><span>^ 7.00%</span> Since last month</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- fourth card -->
+                  <div class="col-sm-12 col-md-6">
+                    <div
+                      class="d-flex flex-column justify-content-between growth p-2 bg-white mb-3"
+                    >
+                      <div class="d-flex ju justify-content-between">
+                        <div>
+                          <p>growth</p>
+                          <p>+ 30.56%</p>
+                        </div>
+                        <div>
+                          <div class="card circle"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="m-0"><span>^ 4.87%</span> Since last month</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6">
+                <div class="card production"></div>
+              </div>
+            </div>
+
+            <div class="row m-0 p-2">
+              <div class="col-12 col-md-9">
+                <div class="card revenue"></div>
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <div class="card location"></div>
+              </div>
+            </div>
+            <div class="row m-0 p-2">
+              <div class="col-sm-12 col-md-6">
+                <div class="card seliing-product"></div>
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <div class="card sales"></div>
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <div class="card activity"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

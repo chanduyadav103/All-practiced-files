@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.container {
+  background: #020024;
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class-page {
+  width: 600px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+}
+h1 {
+  width: 100%;
+}
+label {
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.fn {
+  width: 49%;
+}
+.ca {
+  width: 32.5%;
+}
+.pn {
+  width: 99%;
+}
+.em {
+  width: 99%;
+}
+.cmp {
+  width: 99%;
+}
+.jt {
+  width: 99%;
+}
+.pe {
+  width: 99%;
+}
+.bn {
+  width: 99%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

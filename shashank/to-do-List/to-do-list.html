@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDOList</title>
+    <link rel="stylesheet" href="./to-do-list.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <form>
+          <h1 class="h1">Welcome to the ToDoList</h1>
+          <h3 class="h3">Where you can make your things done in list</h3>
+          <label>Title</label>
+          <input type="text" class="title" id="title" />
+          <label>Description</label>
+          <textarea
+            cols="10"
+            id="description"
+            placeholder="Description to be note"
+          ></textarea>
+          <button class="btn-1" onclick="toLoadToDo()">Submit</button>
+          <!-- <button class="btn-2" onclick="toFetchTodo()">Gettodo</button> -->
+        </form>
+      </div>
+
+      <div class="rigth-section" id="todos"></div>
+    </div>
+    <script src="./to-do-list.js"></script>
+  </body>
+</html>
