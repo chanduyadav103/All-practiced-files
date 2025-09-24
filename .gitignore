@@ -24,4 +24,9 @@ dist-ssr
 *.sw?
 
 
-readme/
+readme/.DS_Store
+
+*/.DS_Store
+
+/.DS_Store
+
