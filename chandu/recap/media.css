@@ -419,27 +419,38 @@ h1 span {
     text-decoration: underline;
 }
 
-
+/* ----------- Tablets & Small Laptops ----------- */
 @media (max-width: 1024px) {
     .container {
         flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
     }
 
     .text,
     .image {
         max-width: 100%;
+        padding: 20px;
     }
 
     .text h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .pixel img {
-        width: 500px;
-        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .subtext {
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
     }
 }
 
+/* ----------- Tablets & Large Phones ----------- */
 @media (max-width: 750px) {
     nav ul {
         flex-wrap: wrap;
@@ -447,27 +458,22 @@ h1 span {
         gap: 10px;
     }
 
+    .text {
+        text-align: center;
+        padding: 20px;
+    }
+
     .text h1 {
         font-size: 28px;
-        text-align: center;
     }
 
     .text p {
-        text-align: center;
         font-size: 14px;
-    }
-
-    .text button {
-        align-self: center;
     }
 
     .image {
         justify-content: center;
-    }
-
-    .text {
-        text-align: center;
-        text-align: justify;
+        padding: 20px;
     }
 
     .clients h2 {
@@ -493,12 +499,10 @@ h1 span {
     }
 
     .footer-image img {
+        margin: 0 auto;
         width: 100%;
         max-width: 300px;
-    }
-
-    .pics {
-        justify-content: center;
+        height: auto;
     }
 
     .pixelgrade {
@@ -506,15 +510,19 @@ h1 span {
         text-align: center;
     }
 
-    .footer h2 {
-        font-size: 18px;
+    .footer-text p {
+        width: 100%;
     }
 
-    .footer p {
-        font-size: 14px;
+    .subtext {
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        text-align: center;
     }
 }
 
+/* ----------- Small Phones ----------- */
 @media (max-width: 450px) {
     header {
         height: auto;
@@ -523,6 +531,7 @@ h1 span {
 
     nav ul {
         flex-direction: column;
+        gap: 10px;
     }
 
     nav ul button {
@@ -530,11 +539,11 @@ h1 span {
     }
 
     .text h1 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
-    .content h2 {
-        font-size: 18px;
+    .text p {
+        font-size: 14px;
     }
 
     .pixelgrade .pixel {
@@ -543,13 +552,15 @@ h1 span {
     }
 
     .subtext {
+        width: 100%;
+        margin: 0 auto;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .logos {
-        display: flex;
         justify-content: center;
         align-items: center;
+        gap: 10px;
     }
 }

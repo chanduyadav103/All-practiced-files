@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .left {
+            flex: 1;
+            background: #0d47a1;
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        .left h2 {
+            margin-bottom: 10px;
+        }
+
+        .left p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar {
+            background: #0b3b8c;
+            padding: 15px;
+            border-radius: 10px;
+            width: 220px;
+            margin-top: 20px;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 8px 0;
+            font-size: 14px;
+            padding: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .sidebar ul li.active {
+            background: #1565c0;
+        }
+
+        .dashboard-card {
+            background: #f9f9f9;
+            color: black;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 15px;
+            width: 250px;
+            position: relative;
+        }
+
+        .dashboard-card h4 {
+            margin-bottom: 10px;
+        }
+
+        .dashboard-card img {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .dashboard-card table {
+            width: 100%;
+        }
+
+        .dashboard-card td {
+            font-size: 12px;
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .profile-circle {
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid white;
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-box label {
+            display: block;
+            font-size: 14px;
+            margin: 10px 0 5px;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .show-pass {
+            font-size: 12px;
+            margin-left: 5px;
+            color: blue;
+        }
+
+        .remember {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .remember a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .google {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .signup {
+            font-size: 13px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .signup a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .footer-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f1f1ff;
+            border-radius: 8px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .footer-box a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <h2>Welcome back</h2>
+        <p> #1 Knowledge Base Creator for your Customers and Support Team</p>
+
+
+
+        <div class="profile-circle">
+            <img src="profile.jpg" alt="User">
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="login-box">
+            <h2>Login</h2>
+            <label>Email Address</label>
+            <input type="email" placeholder="email@website.com">
+
+            <label>Password</label>
+            <input type="password" placeholder="enter your password">
+
+            <div class="remember">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember Password</label>
+                </div>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button>Login</button>
+            <div class="signup">Don’t have an account? <a href="#">Signup</a></div>
+            <button class="google">Login with Google</button>
+
+            <div class="footer-box">
+                Facing any issue? Get in touch with us.<br>
+                <a href="mailto:support@website.com">support@website.com</a> | 04288 XXXX78
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
