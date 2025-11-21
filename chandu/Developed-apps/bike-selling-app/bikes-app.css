@@ -1,55 +1,25 @@
- header {
-     background: #6a5acd;
-     color: white;
-     padding: 20px;
-     text-align: center;
- }
+header {
+    background: #6a5acd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
- header h1 {
-     margin: 0;
- }
+.card-title {
+    color: #6a5acd;
+}
 
- .card h5 {
-     color: #6a5acd;
- }
+.btn-buy {
+    background: #6a5acd;
+    color: white;
+}
 
- .btn-custom {
-     background: #6a5acd;
-     color: white;
- }
+.btn-buy:hover {
+    background: #5949b3;
+}
 
- .btn-custom:hover {
-     background: #5848c2;
-     color: white;
- }
-
- .search-bar {
-     border-radius: 20px;
-     border: none;
-     padding: 8px 15px;
-     width: 550px;
-     max-width: 100%;
- }
-
- .search-bar button {
-     background-color: blue;
-     border-radius: 20px;
-     margin-left: 10px;
- }
-
- header {
-     background: #6a5acd;
-     color: white;
-     text-align: center;
-     padding: 20px;
- }
-
- .btn-buy {
-     background: #6a5acd;
-     color: white;
- }
-
- .btn-buy:hover {
-     background: #5949b3;
-     color: white;
- }
+.search-bar {
+    width: 450px;
+    border-radius: 20px;
+    padding: 8px 15px;
+}

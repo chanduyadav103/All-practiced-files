@@ -5,86 +5,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikes Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bikes-app.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        header {
+            background: #6a5acd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            color: #6a5acd;
+        }
+
+        .btn-buy {
+            background: #6a5acd;
+            color: white;
+        }
+
+        .btn-buy:hover {
+            background: #5949b3;
+        }
+
+        .search-bar {
+            width: 450px;
+            border-radius: 20px;
+            padding: 8px 15px;
+        }
+
+        .tab-btn {
+            background: #5949b3;
+            color: white;
+            margin-right: 10px;
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+
+        .tab-btn:hover {
+            background: #6a5acd;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Bikes Store</h1>
-        <p>Select your best BIKES in our website</p>
-        <div class="search-bar d-flex justify-content-center mt-3">
-            <input type="text" id="searchInput" class="form-control" placeholder="Search for bikes...">
-            <button class="btn btn-buy ms-2">Search</button>
-            <button class="btn btn-success ms-2">Reset</button>
-            <button class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#addBikeModal ">Add
-                Bike</button>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:#5949b3;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bike Store</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active tab-btn" data-bs-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link tab-btn" data-bs-toggle="tab" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link tab-btn" data-bs-toggle="tab" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link tab-btn" data-bs-toggle="tab" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="container my-4">
-        <div class="row g-3">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="download (1).jpeg" class="card-img-top" alt="Hybrid Bike">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">royal Bike</h5>
-                        <p class="card-text">Price: 3,22,500</p>
-                        <a href="#" class="btn btn-buy">Buy Now</a>
+    <div class="tab-content">
+
+        <div class="tab-pane fade show active" id="home">
+
+            <header>
+                <h1>Bikes Store</h1>
+                <p>Select your best BIKES in our website</p>
+
+                <div class="search-bar d-flex justify-content-center mt-3">
+                    <input type="text" class="form-control" placeholder="Search for bikes...">
+                    <button class="btn btn-buy ms-2">Search</button>
+                    <button class="btn btn-success ms-2">Reset</button>
+                    <button class="btn btn-outline-dark ms-2">Add Bike</button>
+                </div>
+            </header>
+
+            <div class="container my-4">
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="download (1).jpeg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Royal Bike</h5>
+                                <p class="card-text">Price: 3,22,500</p>
+                                <a href="#" class="btn btn-buy">Buy Now</a>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="download (7).jpeg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Duke Bike</h5>
+                                <p class="card-text">Price: 3,22,500</p>
+                                <a href="#" class="btn btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="download.jpeg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Royal Enfield</h5>
+                                <p class="card-text">Price: 3,22,500</p>
+                                <a href="#" class="btn btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="download (8).jpeg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">GT 650 Bike</h5>
+                                <p class="card-text">Price: 3,22,500</p>
+                                <a href="#" class="btn btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="download (7).jpeg" class="card-img-top" alt="Enfield Bike">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Duke Bike</h5>
-                        <p class="card-text">Price: 3,22,500</p>
-                        <a href="#" class="btn btn-buy">Buy Now</a>
-                    </div>
-                </div>
+        </div>
+
+        <div class="tab-pane fade" id="about">
+
+            <header>
+                <h1>About Us</h1>
+                <p>Learn more about Bike Store</p>
+            </header>
+
+            <div class="container my-4">
+                <h3>Who We Are</h3>
+                <p>We are one of India's most trusted online bike stores. We offer premium bikes at affordable prices.
+                </p>
+
+                <h3>Our Mission</h3>
+                <p>To provide the best bikes and best customer service across India.</p>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="download.jpeg" class="card-img-top" alt="Royal Enfield Bike">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Royal Bike</h5>
-                        <p class="card-text">Price:3,22,500 </p>
-                        <a href="#" class="btn btn-buy">Buy Now</a>
-                    </div>
-                </div>
+        </div>
+
+        <div class="tab-pane fade" id="services">
+
+            <header>
+                <h1>Our Services</h1>
+                <p>What we offer to our customers</p>
+            </header>
+
+            <div class="container my-4">
+                <ul class="list-group">
+                    <li class="list-group-item">✅ Bike Booking</li>
+                    <li class="list-group-item">✅ Bike Repair Services</li>
+                    <li class="list-group-item">✅ Free Bike Consultation</li>
+                    <li class="list-group-item">✅ Home Delivery</li>
+                </ul>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="download (8).jpeg" class="card-img-top" alt="GT 650 Bike">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">GT 650 Bike</h5>
-                        <p class="card-text">Price: 3,22,500</p>
-                        <a href="#" class="btn btn-buy">Buy Now</a>
-                    </div>
-                </div>
+        </div>
+
+        <!-- ✅ CONTACT PAGE -->
+        <div class="tab-pane fade" id="contact">
+
+            <header>
+                <h1>Contact Us</h1>
+                <p>We are here to help!</p>
+            </header>
+
+            <div class="container my-4">
+                <form class="p-4 shadow rounded">
+                    <input type="text" class="form-control mb-3" placeholder="Your Name">
+                    <input type="email" class="form-control mb-3" placeholder="Your Email">
+                    <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+                    <button class="btn btn-buy w-100">Send Message</button>
+                </form>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="download (3).jpeg" class="card-img-top" alt="Royal Enfield Bike">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Royal Enfield Bike</h5>
-                        <p class="card-text">Price: 3,66,500</p>
-                        <a href="#" class="btn btn-buy">Buy Now</a>
-                    </div>
-                </div>
-            </div>
+        </div>
 
+    </div>
 
-            <script src="bikes-app.js"></script>
-            <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

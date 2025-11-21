@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>P Chandu — Frontend Developer</title>
+    <meta name="description" content="P Chandu — Frontend Developer | React.js Developer | Web Developer" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            transition: all 0.3s ease;
+        }
+
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --accent: #7c3aed;
+            --muted: #9aa3b2;
+            --text: #e6eef6;
+            --gap: 16px;
+        }
+
+        body {
+            background: linear-gradient(180deg, #071226 0%, #0b1220 100%);
+            color: var(--text);
+            padding: 32px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 28px;
+            align-items: start;
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(8, 10, 14, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .sidebar .name {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: 0.2px;
+        }
+
+        .sidebar .role {
+            margin-top: 6px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .contact-list {
+            margin-top: 14px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 8px 0;
+            border-top: 1px dashed rgba(255, 255, 255, 0.02);
+        }
+
+        .contact-item:first-of-type {
+            border-top: 0;
+        }
+
+        .contact-item .label {
+            font-size: 12px;
+            color: var(--muted);
+            min-width: 80px;
+        }
+
+        .contact-item .value {
+            font-size: 13px;
+            word-break: break-all;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 18px 0 10px;
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .lang-list {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .summary {
+            font-size: 15px;
+            color: #d7e6f6;
+            line-height: 1.45;
+            margin: 6px 0 14px;
+        }
+
+        h2.section {
+            font-size: 16px;
+            margin: 8px 0 8px;
+            color: #f0f6ff;
+        }
+
+        .edu-item,
+        .proj-item,
+        .exp-item {
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.03);
+        }
+
+        .edu-item:last-child,
+        .proj-item:last-child {
+            border-bottom: 0;
+        }
+
+        .meta {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .proj-title {
+            font-weight: 700;
+            color: #eef6ff;
+        }
+
+        .proj-desc {
+            font-size: 14px;
+            color: #d6e9ff;
+            margin-top: 6px;
+        }
+
+        @media (max-width:880px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 0 8px;
+            }
+
+            .sidebar {
+                order: 2;
+            }
+
+            .main {
+                order: 1;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .card {
+                box-shadow: none;
+                border: 0;
+                background: transparent;
+                padding: 0;
+            }
+        }
+
+        .accent-strip {
+            height: 6px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, var(--accent), #4f46e5);
+            margin-bottom: 12px;
+        }
+
+        /* LIGHT MODE */
+        body.light-mode {
+            background: #f5f7fa;
+            color: #111;
+        }
+
+        body.light-mode .card {
+            background: #ffffff;
+            border: 1px solid #d1d5db;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            color: #111;
+        }
+
+        body.light-mode .skill {
+            background: #e5e7eb;
+            color: #111;
+        }
+
+        body.light-mode .section-title {
+            color: #7c3aed;
+        }
+
+        body.light-mode .meta,
+        body.light-mode .lang-list {
+            color: #374151;
+        }
+
+        body.light-mode a {
+            color: #7c3aed;
+            text-decoration: underline;
+        }
+
+        body.light-mode h2.section {
+            color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- LEFT -->
+        <aside class="sidebar card">
+            <div class="accent-strip" aria-hidden="true"></div>
+            <div class="name">P Chandu</div>
+            <div class="role">Frontend Developer | React.js Developer | Web Developer</div>
+
+            <div class="contact-list" aria-label="Contact information">
+                <div class="contact-item">
+                    <div class="label">Location</div>
+                    <div class="value">Chittoor, Andhra Pradesh, India</div>
+                </div>
+                <div class="contact-item">
+                    <div class="label">Mobile</div>
+                    <div class="value">+91 75696 98356</div>
+                </div>
+                <div class="contact-item">
+                    <div class="label">Email</div>
+                    <div class="value"><a href="mailto:chandu200356@gmail.com">chandu200356@gmail.com</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="label">GitHub</div>
+                    <div class="value"><a href="https://github.com/chanduyadav103"
+                            target="_blank">github.com/chanduyadav103</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="label">LinkedIn</div>
+                    <div class="value"><a href="https://www.linkedin.com/in/chandu-p-813b6329b/"
+                            target="_blank">linkedin.com/in/chandu-p-813b6329b</a></div>
+                </div>
+            </div>
+
+            <!-- Dark/Light toggle button -->
+            <button id="toggle-theme" style="
+            margin-top:16px;
+            padding:8px 16px;
+            border:none;
+            border-radius:6px;
+            background:var(--accent);
+            color:white;
+            cursor:pointer;
+            font-weight:600;
+        ">Toggle Dark / Light Mode</button>
+
+            <div class="section-title">Technical Skills</div>
+            <div class="skill-list" aria-label="Technical skills">
+                <div class="skill">React.js</div>
+                <div class="skill">JavaScript (ES6+)</div>
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">Tailwind CSS</div>
+                <div class="skill">Bootstrap</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Express.js</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Git / GitHub</div>
+                <div class="skill">Postman</div>
+                <div class="skill">VS Code</div>
+                <div class="skill">Figma (Basic)</div>
+            </div>
+
+            <div class="section-title">Concepts</div>
+            <div class="meta">API Integration · UI/UX Design · Agile Methodology · Performance Optimization · Debugging
+                · Version Control</div>
+
+            <div class="section-title">Certifications</div>
+            <div class="meta">Core Java Certification – QSpiders<br>Front-End Web Development – Progmaster</div>
+
+            <div class="section-title">Languages</div>
+            <div class="lang-list">English, Telugu, Tamil</div>
+
+            <div class="section-title">Hobbies</div>
+            <div class="meta">Video Editing · UI Designing · Content Creation · Listening to Music</div>
+        </aside>
+
+        <!-- RIGHT -->
+        <main class="main card">
+            <div class="header-top">
+                <div>
+                    <h1 style="margin:0;font-size:22px">P Chandu</h1>
+                    <div style="color:var(--muted);margin-top:4px">Frontend Developer | React.js Developer | Web
+                        Developer</div>
+                </div>
+                <div style="text-align:right">
+                    <div style="font-size:13px;color:var(--muted)">DOB</div>
+                    <div style="font-weight:700">06 May 2003</div>
+                    <div style="height:8px"></div>
+                    <div style="font-size:13px;color:var(--muted)">Nationality</div>
+                    <div style="font-weight:700">Indian</div>
+                </div>
+            </div>
+
+            <div class="summary">
+                Results-driven and detail-oriented Frontend Developer skilled in designing, developing, and deploying
+                interactive and responsive web applications using React.js, JavaScript, HTML5, and CSS3. Experienced in
+                integrating APIs, optimizing performance, and collaborating within cross-functional Agile teams.
+                Passionate about user-centered design, modern UI frameworks, and building scalable, maintainable
+                front-end solutions aligned with business goals.
+            </div>
+            <!-- Education, Projects & Experience (same as before) -->
+            <!-- ... you can keep your original content here ... -->
+        </main>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-theme');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+
+</html>

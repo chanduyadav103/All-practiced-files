@@ -5,22 +5,27 @@ html {
   padding: 0%;
   margin: 0%;
 }
+
 * {
   box-sizing: border-box;
 }
+
 .nav,
 .main-nav {
   height: 50px;
 }
+
 .btn {
   height: 34px;
   background-color: skyblue;
 }
+
 a {
   color: lightgray;
   text-decoration: none;
   padding: 5px;
 }
+
 .round {
   width: 30px;
   height: 30px;
@@ -28,6 +33,7 @@ a {
   border-radius: 50%;
   margin-left: 10px;
 }
+
 .customer,
 .order,
 .revenues,
@@ -35,26 +41,74 @@ a {
   height: 200px;
   border: solid 1px lightgray;
 }
+
 .circle {
   height: 30px;
   width: 30px;
   border-radius: 50%;
 }
+
 .production {
   height: 400px;
 }
+
 .revenue {
   height: 300px;
 }
+
 .location {
   height: 300px;
 }
+
 .seliing-product {
   height: 270px;
 }
+
 .sales {
   height: 270px;
 }
+
 .activity {
   height: 270px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.main-nav {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+.card {
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.customer {
+  background-color: #e3f2fd;
+}
+
+.order {
+  background-color: #fff3cd;
+}
+
+.revenues {
+  background-color: #d4edda;
+}
+
+.growth {
+  background-color: #f8d7da;
+}
+
+.round {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffc107;
 }

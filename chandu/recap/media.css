@@ -419,7 +419,6 @@ h1 span {
     text-decoration: underline;
 }
 
-/* ----------- Tablets & Small Laptops ----------- */
 @media (max-width: 1024px) {
     .container {
         flex-wrap: wrap;
@@ -450,7 +449,6 @@ h1 span {
     }
 }
 
-/* ----------- Tablets & Large Phones ----------- */
 @media (max-width: 750px) {
     nav ul {
         flex-wrap: wrap;
@@ -522,7 +520,6 @@ h1 span {
     }
 }
 
-/* ----------- Small Phones ----------- */
 @media (max-width: 450px) {
     header {
         height: auto;
