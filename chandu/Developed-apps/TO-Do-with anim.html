@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -527,10 +530,11 @@
             <input type="text" id="searchBox" class="search-box" placeholder=" Search tasks..."
                 onkeyup="filterTasks()" />
 
+
             <div class="filter-container">
-                <button class="filter-btn active" onclick="filterByStatus('all')">All Tasks</button>
-                <button class="filter-btn" onclick="filterByStatus('pending')"> Pending</button>
-                <button class="filter-btn" onclick="filterByStatus('completed')"> Completed</button>
+                <button class="crud-btn add-btn" onclick="addTask()">Add Task</button>
+                <button class="crud-btn edit-btn" onclick="editSelectedTask()"> Edit</button>
+                <button class="crud-btn delete-btn" onclick="deleteSelectedTask()"> Delete</button>
             </div>
 
             <div id="taskList"></div>
