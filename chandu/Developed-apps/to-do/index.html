@@ -595,6 +595,23 @@
                 font-size: 15px;
             }
         }
+
+        /* FIX MOBILE LAYOUT */
+        @media (max-width: 768px) {
+            body {
+                display: block !important;
+                height: auto !important;
+                overflow-y: auto !important;
+            }
+
+            .card-1,
+            .card-2 {
+                width: 100% !important;
+                height: auto;
+                display: block;
+                padding: 10px 0;
+            }
+        }
     </style>
 </head>
 

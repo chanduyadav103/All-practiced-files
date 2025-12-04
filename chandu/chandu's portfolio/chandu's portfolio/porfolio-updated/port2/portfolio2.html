@@ -119,44 +119,55 @@
             <div class="section-header observe-fade">
                 <h2>SELECTED WORKS /</h2>
                 <p class="section-subtitle">(PROJECTS)</p>
-                <p class="section-description">
-                    Thoughtfully crafted digital experiences that blend utility and
-                    aesthetics into something functional, memorable, and refined.
+                <p class="section-description">Beautiful, functional spaces built with thoughtful design and modern
+                    aesthetics,
+                    crafted to deliver a seamless user experience
+                    and created to inspire every visitor.
                 </p>
             </div>
 
             <div class="projects">
+
                 <div class="project">
+                    <div class="project-media image-hidden">
+                        <video src="images/WhatsApp Video to-do.mp4" alt="Interior project" controls autoplay muted
+                            loop>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                     <div class="project-info">
                         <div class="project-number">01</div>
-                        <h3 class="project-title">Designer Space</h3>
-                        <p class="project-subtitle">Interior Design website — 2025</p>
+                        <h3 class="project-title">TodoTasks</h3>
+                        <p class="project-subtitle">Friendly, simple, easy to remember — 2025</p>
                         <div class="tags">
                             <span>DEVELOPMENT</span>
                             <span>2025</span>
                         </div>
                     </div>
+                </div>
+                <div class="project">
+
+                    <div class="project-info">
+                        <div class="project-number">02</div>
+                        <h3 class="project-title">Nexcent connect</h3>
+                        <p class="project-subtitle">Service Management Website — 2025</p>
+                        <div class="tags">
+                            <span>DEVELOPMENT</span>
+                            <span>2025</span>
+                        </div>
+                    </div>
+                    <div class="project-media image-hidden">
+                        <video src="images/green web.mp4" alt="Interior project" controls autoplay muted loop>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="project">
                     <div class="project-media image-hidden">
                         <video src="images/interior new design.mp4" alt="Interior project" controls autoplay muted loop>
                             Your browser does not support the video tag.
                         </video>
                     </div>
-
-                    <div class="project-media image-hidden">
-                        <video src="" alt="Interior project" controls autoplay muted loop>
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-number">02</div>
-                        <h3 class="project-title">Designer Space</h3>
-                        <p class="project-subtitle">Interior Design website — 2025</p>
-                        <div class="tags">
-                            <span>DEVELOPMENT</span>
-                            <span>2025</span>
-                        </div>
-                    </div>
-
                     <div class="project-info">
                         <div class="project-number">03</div>
                         <h3 class="project-title">Designer Space</h3>
@@ -166,11 +177,7 @@
                             <span>2025</span>
                         </div>
                     </div>
-                    <div class="project-media image-hidden">
-                        <video src="images/interior new design.mp4" alt="Interior project" controls autoplay muted loop>
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
+
                 </div>
             </div>
     </section>
@@ -183,7 +190,6 @@
                     DESIGNER<br>
                     CREATOR /
                 </h2>
-
                 <div class="about-text">
                     <p>I'm a developer with a knack for turning ideas into polished, purposeful, and user-friendly
                         digital experiences.</p>
@@ -197,15 +203,15 @@
             <div class="about-right observe-fade">
                 <h3>Skills</h3>
                 <div class="skills-grid">
-                    <div class="skill">React & Next.js</div>
-                    <div class="skill">Node.js & Express</div>
+                    <div class="skill">HTML5</div>
+                    <div class="skill">CSS3</div>
+                    <div class="skill">JAVASCRIPT</div>
+                    <div class="skill">React.js</div>
                     <div class="skill">TypeScript</div>
                     <div class="skill">TailwindCSS</div>
-                    <div class="skill">PostgreSQL</div>
-                    <div class="skill">MongoDB</div>
+                    <div class="skill">MySQL</div>
                     <div class="skill">Git & GitHub</div>
                     <div class="skill">REST APIs</div>
-                    <div class="skill">Firebase</div>
                     <div class="skill">Figma</div>
                 </div>
             </div>
@@ -235,12 +241,12 @@
                             </div>
 
                             <div class="form-group">
-                                <textarea id="message" name="message" placeholder="Say hello or drop a note..." rows="6"
-                                    required maxlength="1000"></textarea>
+                                <textarea class="text" id="message" name="message"
+                                    placeholder="Say hello or drop a note..."></textarea>
                                 <span class="error-message" id="messageError"></span>
                             </div>
+                            <button type="submit" class="submit-btn" id="sendBtn">Send Message</button>
 
-                            <button type="submit" class="submit-btn">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -262,9 +268,10 @@
                     <div class="footer-column">
                         <h3 class="footer-heading">Socials</h3>
                         <nav class="footer-nav">
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a>
+                            <a href="https://www.linkedin.com/in/chandu-p-813b6329b/" target="_blank"
+                                rel="noopener noreferrer">Linkedin</a>
+                            <a href="https://github.com/chanduyadav103" target="_blank"
+                                rel="noopener noreferrer">Github</a>
                         </nav>
                     </div>
                 </div>
@@ -282,6 +289,13 @@
     </section>
 
     <script src="portfolio2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("ZFHO95qXF7LMsiH80");
+    </script>
+
+    <div id="toast" class="toast">Message sent! I'll get back to you soon.</div>
+
 </body>
 
 </html>

@@ -158,16 +158,7 @@ contactForm.addEventListener('submit', (e) => {
 
     if (hasErrors) return;
 
-    const name = encodeURIComponent(nameInput.value.trim());
-    const email = encodeURIComponent(emailInput.value.trim());
-    const message = encodeURIComponent(messageInput.value.trim());
 
-    const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-    const whatsappUrl = `https://wa.me/919876543210?text=${whatsappMessage}`;
-
-    window.open(whatsappUrl, '_blank');
-    alert('Message sent! Opening WhatsApp...');
-    contactForm.reset();
 });
 
 // Performance optimization: Debounce scroll events
@@ -189,3 +180,78 @@ window.addEventListener('load', () => {
 });
 
 console.log('Portfolio initialized successfully! 🚀');
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const sendBtn = document.getElementById("sendBtn");
+    sendBtn.innerHTML = `<span class="spinner"></span> Sending...`;
+    sendBtn.classList.add("loading");
+
+    const nameResult = validateName(nameInput.value);
+    const emailResult = validateEmail(emailInput.value);
+    const messageResult = validateMessage(messageInput.value);
+
+    let hasErrors = false;
+
+    if (!nameResult.valid) { showError('name', nameResult.message); markError(nameInput); hasErrors = true; }
+    else { markSuccess(nameInput); }
+
+    if (!emailResult.valid) { showError('email', emailResult.message); markError(emailInput); hasErrors = true; }
+    else { markSuccess(emailInput); }
+
+    if (!messageResult.valid) { showError('message', messageResult.message); markError(messageInput); hasErrors = true; }
+    else { markSuccess(messageInput); }
+
+    if (hasErrors) {
+        sendBtn.innerHTML = "Send Message";
+        sendBtn.classList.remove("loading");
+        return;
+    }
+
+    emailjs.send("service_7n70gn7", "template_uqhimpu", {
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        message: messageInput.value.trim()
+    })
+        .then(() => {
+            showToast("Message sent successfully!");
+            contactForm.reset();
+            sendBtn.innerHTML = "Send Message";
+            sendBtn.classList.remove("loading");
+        })
+        .catch((error) => {
+            console.error("EmailJS Error:", error);
+            showToast("Error sending message. Try again.");
+            sendBtn.innerHTML = "Send Message";
+            sendBtn.classList.remove("loading");
+        });
+});
+
+
+function showToast(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3000);
+}
+function markSuccess(input) {
+    input.classList.remove("error");
+    input.classList.add("success");
+}
+
+function markError(input) {
+    input.classList.add("error");
+    input.classList.remove("success");
+}
+if (!nameResult.valid) { showError('name', nameResult.message); markError(nameInput); hasErrors = true; }
+else { markSuccess(nameInput); }
+
+if (!emailResult.valid) { showError('email', emailResult.message); markError(emailInput); hasErrors = true; }
+else { markSuccess(emailInput); }
+
+if (!messageResult.valid) { showError('message', messageResult.message); markError(messageInput); hasErrors = true; }
+else { markSuccess(messageInput); }
